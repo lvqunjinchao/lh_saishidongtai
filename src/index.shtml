@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10;IE=9; IE=8; IE=7; IE=EDGE">
+    <!-- css资源start -->
+    <!--#include virtual="head.shtml"-->
+    <link rel="stylesheet" href="./images/obox.css">
+    <link rel="stylesheet" href="./images/iconfont/iconfont.css" />
+    <!-- css资源end -->
+    <!-- 本页面独立css start -->
+    <link rel="stylesheet" href="./images/zhuye.css">
+    <!-- 本页面独立css end -->
+</head>
+
+<body>
+    <div class="o_body">
+        <div class="o_main">
+            <!-- 头部start -->
+            <!--#include virtual="header.shtml"-->
+            <!-- 头部end -->
+
+            <!-- PAD菜单栏 start -->
+            <div class="menu_zhezhao o_g displaynone js_menu_zhezhao">
+                <div class="left o_u"></div>
+                <div class="right o_u">
+                    <a class="menu_item">了解大赛</a>
+                    <a class="menu_item">我的参赛</a>
+                    <a class="menu_item">参赛作品</a>
+                    <a class="menu_item">赛事动态</a>
+                    <a class="menu_item">获奖公示</a>
+                    <a class="menu_item js_last_menu_item last_menu_item">历届回顾</a>
+                    <div class="login_success_pad_phone displaynone">
+                        <span class="iconfont">&#xe633;</span>
+                        <div class="name_tuichu">
+                            <span class="name">tt123456</span>
+                            <i>|</i>
+                            <span class="tuichu">退出</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PAD菜单栏 end -->
+
+            <!-- 手机端回到顶部 start -->
+            <div class="goback displaynone">
+                <span class="iconfont">&#xe63f;</span>
+            </div>
+            <!-- 手机端回到顶部 end -->
+
+            <!--轮播图 start-->
+            <div class="banner js_banner o_g">
+                <div class="showbox">
+                    <ul class="o_g">
+                        <!-- 在js文件中，是没有o_picture的，需要自己写上去方法 -->
+                        <li class="o_u o_df_2-2 o_sm_1-2 js_firstimg">
+                            <img src="./images/tupian/banner 拷贝.png" df="./images/tupian/banner 拷贝.png" xs='./images/tupian/banner350.png' class="o_picture" alt="">
+                        </li>
+                        <li class="o_u o_df_2-2 o_sm_1-2">
+                            <img class="o_lazy o_picture" df="./images/tupian/banner 拷贝.png" xs='./images/tupian/banner350.png' alt="">
+                        </li>
+                        <li class="o_u o_df_2-2 o_sm_1-2">
+                            <img class="o_lazy o_picture" df="./images/tupian/banner 拷贝.png" xs='./images/tupian/banner350.png' alt="">
+                        </li>
+                    </ul>
+                </div>
+                <!--分页-->
+                <ul class="pager js_pager"></ul>
+            </div>
+            <!--轮播图 end-->
+
+            <!-- 赛事新闻模块 start -->
+
+            <!-- 弹窗 start -->
+            <!-- 弹窗背景遮罩 -->
+            <div class="popup_all js_popup_all displaynone"></div>
+            <div class="popup displaynone">
+                <div class="content_box">
+                    <div class="content">
+                        <div class="close_popup js_close_popup">
+                            <span class="iconfont">&#xe608;</span>
+                        </div>
+                        <div class="popup_video">
+                            <video src="" class="o_video" controls>
+                                <source df="./images/video.mp4" md="./images/video.mp4" xs="./images/video.mp4"
+                                    dfpic="./images/tupian/图层 53.png" xspic="./images/tupian/图层 53.png"
+                                    type="video/mp4">
+                            </video>
+                            <div class="bofang">
+                                <span class="iconfont">&#xe642;</span>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="title">第三届中国室内设计师冠军大赛</p>
+                            <p class="time">发布时间 | 2020.02.12</p>
+                            <div class="shuoming">
+                                “海尔智慧家庭” 杯中国室内设计冠军赛作为国内顶级行业赛事，由海尔家电产业集团主办，国内外著名协会和机构为大赛提供学术支持。 大赛旨在依借海尔资源优势，整合相关领域人才、权威力量，对标当下用户高端化、智能化需求升级，打造室内设计、智能家居的跨行业交流平台。 通过 “智装一体化” 理念输送，海尔鼓励设计力量与智能家居元素融合，加速孵化精准满足用户需求的智装一体化方案。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 弹窗 end -->
+
+            <div class="saishixinwen o_g js_saishixinwen">
+                <div class="warp2">
+                    <div class="title o_g">
+                        <span class="title_left">赛事新闻</span>
+                        <span class="title_right">了解更多</span>
+                    </div>
+                    <div class="video o_g">
+                        <div class="video_left o_u">
+                            <a href="#">
+                                <img src="./images/tupian/图层 53.png" alt="">
+                                <div class="bottom o_g">
+                                    <span class="bottom_left">2020“海尔智家杯”第三届中国室内设计师冠军赛大赛视频</span>
+                                    <span class="bottom_right">了解更多</span>
+                                </div>
+                                <div class="bofang">
+                                    <span class="iconfont">&#xe642;</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="video_right o_u">
+                            <div class="top">
+                                <img src="./images/tupian/图层 64.png" alt="">
+                                <div class="tishi">第三届中国室内设计师冠军赛大赛新闻</div>
+                            </div>
+                            <div class="bottom">
+                                <img src="./images/tupian/图层 64.png" alt="">
+                                <div class="tishi">第三届中国室内设计师冠军赛大赛新闻</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_box o_g">
+                        <div class="table_left o_u o_df_1-2">
+                            <div class="tab_bar o_u color_005AAA">
+                                大咖风采
+                                <span class="xiahuaxian"></span>
+                            </div>
+                            <div class="tab_bar o_u">
+                                作品精选
+                                <span class="xiahuaxian displaynone"></span>
+                            </div>
+                            <div class="tab_bar o_u">
+                                精彩瞬间
+                                <span class="xiahuaxian displaynone"></span>
+                            </div>
+                            <div class="tab_bar o_u">
+                                设计师沙龙
+                                <span class="xiahuaxian displaynone"></span>
+                            </div>
+                        </div>
+                        <div class="table_right o_u o_df_1-2">
+                            <input type="text" placeholder="请输入关键字"><span class="iconfont">&#xe636;</span>
+                        </div>
+                    </div>
+                    <div class="list o_g">
+
+                    </div>
+                    <div class="loadmore_box">
+                        <span class="loadmore js_loadmore">加载更多</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 赛事新闻模块 end -->
+
+            <!-- 主办单位 模块 start -->
+            <div class="company o_g">
+                <div class="warp2">
+                    <div class="list">
+                        <div class="item o_u o_df_1-4">
+                            <p class="main_comany danwei">主办单位</p>
+                            <div class="main_img">
+                                <img src="./images/tupian/weibulogo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="item o_u o_df_1-4">
+                            <p class="cheng_comany danwei">承办单位</p>
+                            <p class="detail">北京高科技传媒有限公司</p>
+                        </div>
+                        <div class="item o_u o_df_1-4">
+                            <p class="xue_comany danwei">学术支持</p>
+                            <p class="detail">中国建筑装饰协会</p>
+                        </div>
+                        <div class="item o_u o_df_1-4">
+                            <div class="weixin_img">
+                                <img src="./images/tupian/weixin.png" alt="">
+                                <p>微信公众号</p>
+                            </div>
+                            <div class="app_img">
+                                <img src="./images/tupian/weixin.png" alt="">
+                                <p>官方app</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 主办单位 模块 end -->
+
+            <!-- 尾部start -->
+            <!--#include virtual="footer.shtml"-->
+            <!-- 尾部end -->
+        </div>
+    </div>
+    <!-- js资源start -->
+    <!-- js资源end -->
+    <!-- 本地页面独立js start -->
+    <script type="text/javascript" src="./images/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="./images/obox-min.js"></script>
+    <script type="text/javascript" src="./images/zhuye.js"></script>
+
+    <!-- 本页面独立js end -->
+</body>
+
+</html>
