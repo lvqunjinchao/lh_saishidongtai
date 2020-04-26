@@ -194,7 +194,7 @@
   background-color: #f2f2f2;
 }
 .company .list {
-  padding: 0.8rem 0 0.8rem 0;
+  padding: 1rem 0 1rem 0;
 }
 .company .list .item .main_img img {
   width: 0.97rem;
@@ -322,6 +322,9 @@
 .daka {
   margin-bottom: 0.6rem;
 }
+.daka .share_huiding {
+  display: none;
+}
 .daka .weizhi {
   padding-bottom: 0.3rem;
   padding-top: 0.29rem;
@@ -344,7 +347,6 @@
   background-color: #CEA975;
   margin-top: 0.31rem;
   margin-bottom: 0.2rem;
-  height: 0.14rem;
   font-size: 0.14rem;
   font-family: Source Han Sans CN;
   font-weight: 400;
@@ -355,12 +357,12 @@
   border-bottom: 1px solid #e7eaec;
 }
 .daka .content .title .little_title {
-  height: 0.28rem;
   font-size: 0.3rem;
   font-family: Source Han Sans CN;
   font-weight: 300;
   color: #333333;
-  line-height: 0.6rem;
+  height: 0.28rem;
+  line-height: 0.28rem;
 }
 .daka .content .title .see_num {
   float: right;
@@ -370,11 +372,14 @@
   font-family: Source Han Sans CN;
   font-weight: 400;
   color: #666666;
-  line-height: 0.72rem;
   padding-left: 0.1rem;
+  height: 0.28rem;
+  line-height: 0.28rem;
 }
 .daka .content .title .see_num .see {
   font-size: 0.2rem;
+  height: 0.28rem;
+  line-height: 0.28rem;
 }
 .daka .content .fenxiang {
   position: absolute;
@@ -429,4 +434,986 @@
   font-weight: 300;
   color: #666666;
   line-height: 0.3rem;
+}
+@media screen and (max-width: 1200px) {
+  .menu_zhezhao {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 400;
+    left: 0;
+  }
+  .menu_zhezhao .left {
+    width: 50%;
+    height: 100%;
+    background-color: #7F7F7F;
+  }
+  .menu_zhezhao .right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+  }
+  .menu_zhezhao .right .menu_item {
+    display: block;
+    border-top: 1px solid #EEEEEE;
+    padding: 25px 0 25px 39px;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .menu_zhezhao .right .last_menu_item {
+    border-bottom: 1px solid #EEEEEE !important;
+  }
+  .menu_zhezhao .right .login_success_pad_phone {
+    position: absolute;
+    top: 0.48rem;
+    left: 0.48rem;
+  }
+  .menu_zhezhao .right .login_success_pad_phone span {
+    font-size: 0.17rem;
+  }
+  .menu_zhezhao .right .login_success_pad_phone .name_tuichu {
+    display: inline-block;
+    padding-left: 0.24rem;
+  }
+  .menu_zhezhao .right .login_success_pad_phone .name_tuichu i {
+    display: inline-block;
+    font-size: 0.17rem;
+    padding-left: 0.24rem;
+    padding-right: 0.24rem;
+  }
+  .header {
+    height: 0.8rem;
+  }
+  .header .warp {
+    padding-top: 0.22rem;
+    padding-bottom: 0.22rem;
+  }
+  .header .warp .flex_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .warp .nav_left .logo {
+    width: 1.69rem;
+    height: 0.36rem;
+    margin-right: 0;
+  }
+  .header .warp .nav_left .logo img {
+    height: 100%;
+    width: 100%;
+  }
+  .header .warp .nav_left .nav_detail {
+    display: none;
+  }
+  .header .warp .nav_right .pcduan {
+    display: none;
+  }
+  .header .warp .nav_right .padduan {
+    text-align: right;
+    display: block;
+  }
+  .header .warp .nav_right .padduan span {
+    display: inline-block;
+    font-size: 0.22rem;
+    color: #333;
+    font-weight: 400;
+    padding: 0 15px;
+  }
+  .header .warp .nav_right .padduan .close_menu {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    padding: 14px;
+    display: inline-block;
+    height: 0.22rem;
+    width: 0.22rem;
+    background-color: #005AAA;
+  }
+  .header .warp .nav_right .padduan .close_menu span {
+    color: #fff;
+    padding: 0;
+  }
+  .banner {
+    width: 100%;
+    /*需要分页自定义css*/
+  }
+  .banner .pager {
+    position: absolute;
+    bottom: 0.24rem;
+    text-align: center;
+    width: 100%;
+  }
+  .banner .pager li {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: "iconfont" !important;
+    color: #fff;
+    font-size: 0.26rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    width: 0.073rem;
+    height: 0.073rem;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  .banner .pager li.cur::before {
+    content: '';
+    width: 0.18rem;
+    height: 0.18rem;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    top: -50%;
+    left: -50%;
+    margin-left: -0.03rem;
+    margin-top: -0.03rem;
+  }
+  .banner img {
+    height: 3.5rem;
+  }
+  .banner .btn_prev {
+    left: 0.14rem;
+  }
+  .banner .btn_prev i {
+    font-size: 0.22rem;
+  }
+  .banner .btn_next {
+    right: 0.14rem;
+  }
+  .banner .btn_next i {
+    font-size: 0.22rem;
+  }
+  .company {
+    background-color: #f2f2f2;
+  }
+  .company .list {
+    padding: 0.24rem 0 0.24rem 0;
+  }
+  .company .list .item .main_img {
+    padding-top: 0.21rem;
+  }
+  .company .list .item .main_img img {
+    width: 0.79rem;
+    height: 0.25rem;
+  }
+  .company .list .item .danwei {
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.18rem;
+  }
+  .company .list .item .weixin_img {
+    display: inline-block;
+    padding-right: 0.2rem;
+  }
+  .company .list .item .weixin_img p {
+    padding-top: 0.11rem;
+    text-align: center;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.18rem;
+  }
+  .company .list .item .weixin_img img {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+  .company .list .item .app_img {
+    display: inline-block;
+  }
+  .company .list .item .app_img p {
+    padding-top: 0.1rem;
+    text-align: center;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .company .list .item .app_img img {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+  .company .list .item .detail {
+    padding-top: 0.3rem;
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .company .list .item:last-child {
+    text-align: right;
+  }
+  .daka_zhezhao {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 600;
+  }
+  .daka_share {
+    width: 5.81rem;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -3.505rem;
+    margin-left: -2.905rem;
+    background-color: #7f7f7f;
+    padding: 0.38rem 0.37rem;
+    z-index: 601;
+  }
+  .daka_share .content {
+    padding-left: 0.2rem;
+    background-color: #fff;
+    position: relative;
+    padding-right: 0.2rem;
+  }
+  .daka_share .content .guanbi {
+    cursor: pointer;
+    position: absolute;
+    right: 0.17rem;
+    top: 0.17rem;
+    height: 0.24rem;
+    width: 0.24rem;
+    text-align: center;
+    line-height: 0.24rem;
+    background-color: #000000;
+    border-radius: 50%;
+  }
+  .daka_share .content .guanbi span {
+    color: #FFFFFF;
+    font-size: 0.14rem;
+  }
+  .daka_share .content .logo_box {
+    padding: 0.21rem 0.2rem 0.23rem;
+  }
+  .daka_share .content .logo_box img {
+    display: inline-block;
+    height: 0.3rem;
+    width: 1.4rem;
+  }
+  .daka_share .content .img_box {
+    width: 100%;
+  }
+  .daka_share .content .img_box img {
+    height: 2.73rem;
+    width: 100%;
+  }
+  .daka_share .content .fengcai {
+    padding-top: 0.21rem;
+    padding-bottom: 0.09rem;
+  }
+  .daka_share .content .fengcai span {
+    display: inline-block;
+    font-size: 0.14rem;
+    padding: 0.06rem 0.1rem 0.08rem;
+    background-color: #CEA975;
+    color: #FFFFFF;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+  }
+  .daka_share .content .share_title {
+    font-size: 0.24rem;
+    font-family: Microsoft YaHei UI;
+    font-weight: bold;
+    color: #333333;
+  }
+  .daka_share .content .time {
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    color: #666666;
+    padding: 0.2rem 0 0.17rem 0;
+  }
+  .daka_share .content .baohan {
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    color: #666666;
+    line-height: 0.24rem;
+  }
+  .daka_share .content .bottom {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+  .daka_share .content .bottom img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 0.45rem;
+    width: 1.91rem;
+    padding-top: 0.2rem;
+  }
+  .daka_share .content .bottom .saoma {
+    float: right;
+    vertical-align: middle;
+  }
+  .daka_share .content .bottom .saoma span {
+    display: inline-block;
+    width: 1.2rem;
+    vertical-align: middle;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.18rem;
+    padding-right: 0.21rem;
+  }
+  .daka_share .content .bottom .saoma img {
+    vertical-align: middle;
+    display: inline-block;
+    width: 0.78rem;
+    padding: 0.06rem 0.05rem 0.04rem 0.07rem;
+    height: 0.8rem;
+    border: 1px solid #e5e5e5;
+  }
+  .daka {
+    margin-bottom: 0.6rem;
+    position: relative;
+  }
+  .daka .share_huiding {
+    display: inline-block;
+    height: auto;
+    position: absolute;
+    width: 0.48rem;
+    right: 0;
+    z-index: 500;
+    top: 70%;
+  }
+  .daka .share_huiding .share {
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-bottom: 0.1rem;
+    width: 100%;
+    height: 0.48rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .daka .share_huiding .share span {
+    color: #fff;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    font-size: 0.22rem;
+  }
+  .daka .share_huiding .huiding {
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    height: 0.48rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .daka .share_huiding .huiding span {
+    color: #fff;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    font-size: 0.22rem;
+  }
+  .daka .weizhi {
+    padding-bottom: 0.22rem;
+    padding-top: 0.19rem;
+    height: 0.16rem;
+    font-size: 0.16rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .daka .content {
+    padding-left: 0.41rem;
+    position: relative;
+    padding-right: 0.41rem;
+    border: 1px solid #e7eaec;
+  }
+  .daka .content .label {
+    display: inline-block;
+    padding: 0.06rem 0.1rem 0.08rem 0.1rem;
+    color: #FFFFFF;
+    background-color: #CEA975;
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .daka .content .title {
+    padding-bottom: 0.38rem;
+    border-bottom: 1px solid #e7eaec;
+  }
+  .daka .content .title .little_title {
+    height: 0.28rem;
+    font-size: 0.3rem;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    color: #333333;
+  }
+  .daka .content .title .see_num {
+    float: right;
+  }
+  .daka .content .title .see_num .num {
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.72rem;
+    padding-left: 0.1rem;
+  }
+  .daka .content .title .see_num .see {
+    font-size: 0.2rem;
+  }
+  .daka .content .fenxiang {
+    display: none;
+    position: absolute;
+    width: 0.46rem;
+    text-align: right;
+    top: 0.11rem;
+    left: -0.56rem;
+  }
+  .daka .content .fenxiang span {
+    padding-top: 0.1rem;
+    text-align: right;
+    display: block;
+    font-size: 0.3rem;
+  }
+  .daka .content .fenxiang .weibo {
+    color: #f12a20;
+  }
+  .daka .content .fenxiang .kongjian {
+    color: #fede2b;
+  }
+  .daka .content .fenxiang .weixin {
+    color: #56b151;
+  }
+  .daka .content .fenxiang .qie {
+    color: #158dfc;
+  }
+  .daka .content .jieshao {
+    text-align: center;
+    padding: 0.39rem 0.47rem 0.39rem 0.48rem;
+    font-size: 0.16rem;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    color: #666666;
+    line-height: 0.3rem;
+  }
+  .daka .content .img_box {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 0.4rem;
+  }
+  .daka .content .img_box img {
+    display: inline-block;
+    height: 15.77rem;
+    width: 6.6rem;
+  }
+  .daka .content .jieshao2 {
+    text-align: center;
+    padding: 0.39rem 0.47rem 0.39rem 0.48rem;
+    font-size: 0.16rem;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    color: #666666;
+    line-height: 0.3rem;
+  }
+}
+@media screen and (max-width: 751px) {
+  .goback {
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    background-color: #646464;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    line-height: 100%;
+    z-index: 200;
+    text-align: center;
+  }
+  .goback span {
+    display: inline-block;
+    line-height: 40px;
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+  .menu_zhezhao .left {
+    width: 30%;
+    height: 100%;
+    background-color: #7F7F7F;
+  }
+  .menu_zhezhao .right {
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+  }
+  .menu_zhezhao .right .menu_item {
+    border-top: 1px solid #EEEEEE;
+    padding: 0.25rem 0 0.24rem 0.15rem;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .menu_zhezhao .right .menu_item:last-child {
+    border-bottom: 1px solid #EEEEEE;
+  }
+  .menu_zhezhao .right .login_success_pad_phone {
+    position: absolute;
+    top: 5.41rem;
+    left: 0.15rem;
+    display: inline-block;
+  }
+  .menu_zhezhao .right .login_success_pad_phone span {
+    font-size: 0.14rem;
+  }
+  .menu_zhezhao .right .login_success_pad_phone .name_tuichu {
+    display: inline-block;
+    padding-left: 0.2rem;
+  }
+  .menu_zhezhao .right .login_success_pad_phone .name_tuichu i {
+    display: inline-block;
+    font-size: 0.14rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+  .header {
+    height: 0.5rem;
+  }
+  .header .warp {
+    padding-top: 0.14rem;
+    padding-bottom: 0.14rem;
+  }
+  .header .warp .flex_box .nav_left {
+    width: 60%;
+  }
+  .header .warp .flex_box .nav_left .logo {
+    width: 1.03rem;
+    height: 0.22rem;
+  }
+  .header .warp .flex_box .nav_left .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  .header .warp .flex_box .nav_right {
+    width: 40%;
+    text-align: right;
+  }
+  .header .warp .flex_box .nav_right .menu {
+    padding-right: 0;
+  }
+  .header .warp .flex_box .nav_right .close_menu {
+    right: -15px;
+  }
+  .banner {
+    /*需要分页自定义css*/
+  }
+  .banner .pager {
+    position: absolute;
+    bottom: 0.08rem;
+    text-align: center;
+    width: 100%;
+  }
+  .banner .pager li {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: "iconfont" !important;
+    color: #fff;
+    font-size: 0.12rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    width: 0.05rem;
+    height: 0.05rem;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  .banner .pager li.cur::before {
+    content: '';
+    width: 0.11rem;
+    height: 0.11rem;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    top: -50%;
+    left: -50%;
+    margin-left: -0.02rem;
+    margin-top: -0.017rem;
+  }
+  .banner img {
+    height: 1.5rem;
+  }
+  .banner .btn_next {
+    display: none !important;
+  }
+  .banner .btn_prev {
+    display: none !important;
+  }
+  .company .warp2 .list {
+    padding-top: 0.29rem;
+    padding-bottom: 0.3rem;
+  }
+  .company .warp2 .list .item {
+    width: 33.33333%;
+    vertical-align: top;
+    padding-right: 10px;
+  }
+  .company .warp2 .list .item p {
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .company .warp2 .list .item .main_img {
+    padding-top: 0.09rem;
+  }
+  .company .warp2 .list .item .main_img img {
+    height: 0.21rem;
+    width: 0.62rem;
+  }
+  .company .warp2 .list .item .detail {
+    line-height: auto;
+    padding-top: 0.14rem;
+    line-height: 0.18rem;
+  }
+  .company .warp2 .list .item .weixin_img {
+    padding: 0.19rem 0.14rem 0.13rem 0.14rem;
+    background-color: #fff;
+    margin-right: 0.4rem;
+  }
+  .company .warp2 .list .item .weixin_img img {
+    width: 0.72rem;
+    height: 0.72rem;
+  }
+  .company .warp2 .list .item .weixin_img p {
+    padding-top: 0.09rem;
+  }
+  .company .warp2 .list .item .app_img {
+    padding: 0.19rem 0.14rem 0.13rem 0.14rem;
+    background-color: #fff;
+  }
+  .company .warp2 .list .item .app_img img {
+    width: 0.72rem;
+    height: 0.72rem;
+  }
+  .company .warp2 .list .item .app_img p {
+    padding-top: 0.09rem;
+  }
+  .company .warp2 .list .item:last-child {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.2rem;
+  }
+  .footer {
+    width: 100%;
+    min-height: auto;
+    background: #fafafa;
+    text-align: center;
+  }
+  .footer .warp {
+    padding: 10px 15px 20px;
+  }
+  .footer .warp .bottom {
+    margin: 0;
+    border: none;
+    padding: 0 0.1rem;
+  }
+  .footer .warp .bottom span,
+  .footer .warp .bottom a {
+    font-size: 0.12rem;
+    vertical-align: middle;
+  }
+  .footer .warp .bottom .wangzhan {
+    padding: 5px 0;
+  }
+  .footer .warp .bottom .wangzhan a {
+    color: #0c5ca8;
+  }
+  .daka_share {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    background-color: #7f7f7f;
+    padding: 15px;
+    margin-left: 0;
+    margin-top: 0;
+    z-index: 601;
+    box-sizing: border-box;
+  }
+  .daka_share .content {
+    padding-left: 0.1rem;
+    background-color: #fff;
+    position: relative;
+    padding-right: 0.1rem;
+  }
+  .daka_share .content .guanbi {
+    cursor: pointer;
+    position: absolute;
+    right: 0.17rem;
+    top: 0.17rem;
+    height: 0.24rem;
+    width: 0.24rem;
+    text-align: center;
+    line-height: 0.24rem;
+    background-color: #000000;
+    border-radius: 50%;
+  }
+  .daka_share .content .guanbi span {
+    color: #FFFFFF;
+    font-size: 0.14rem;
+  }
+  .daka_share .content .logo_box {
+    padding: 0.13rem 0.1rem 0.1rem;
+  }
+  .daka_share .content .logo_box img {
+    display: inline-block;
+    height: 0.21rem;
+    width: 0.97rem;
+  }
+  .daka_share .content .img_box {
+    width: 100%;
+  }
+  .daka_share .content .img_box img {
+    height: 1.79rem;
+    width: 100%;
+  }
+  .daka_share .content .fengcai {
+    padding-top: 0.2rem;
+    padding-bottom: 0.1rem;
+  }
+  .daka_share .content .fengcai span {
+    display: inline-block;
+    font-size: 0.12rem;
+    padding: 0.07rem 0.1rem 0.06rem 0.08rem;
+    background-color: #CEA975;
+    color: #FFFFFF;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+  }
+  .daka_share .content .share_title {
+    font-size: 0.18rem;
+    font-family: Microsoft YaHei UI;
+    font-weight: bold;
+    color: #333333;
+  }
+  .daka_share .content .time {
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    color: #666666;
+    padding: 0.15rem 0 0.07rem 0;
+  }
+  .daka_share .content .baohan {
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    color: #666666;
+    line-height: 0.18rem;
+  }
+  .daka_share .content .bottom {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+  .daka_share .content .bottom img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 0.4rem;
+    width: 1.68rem;
+    padding-top: 0;
+  }
+  .daka_share .content .bottom .saoma {
+    float: none;
+    position: relative;
+    vertical-align: middle;
+  }
+  .daka_share .content .bottom .saoma span {
+    display: inline-block;
+    width: 2.17rem;
+    vertical-align: middle;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.18rem;
+    padding-right: 0;
+    padding-top: 0.1rem;
+  }
+  .daka_share .content .bottom .saoma img {
+    position: absolute;
+    bottom: -0.1rem;
+    right: 0.05rem;
+    vertical-align: middle;
+    display: inline-block;
+    width: 0.78rem;
+    padding: 0.06rem 0.05rem 0.04rem 0.07rem;
+    height: 0.8rem;
+    border: 1px solid #e5e5e5;
+  }
+  .daka {
+    margin-bottom: 0.53rem;
+    position: relative;
+  }
+  .daka .share_huiding {
+    display: inline-block;
+    height: auto;
+    position: absolute;
+    width: 0.36rem;
+    right: 0;
+    z-index: 500;
+    top: 70%;
+  }
+  .daka .share_huiding .share {
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-bottom: 0.1rem;
+    width: 100%;
+    height: 0.36rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .daka .share_huiding .share span {
+    color: #fff;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    font-size: 0.16rem;
+  }
+  .daka .share_huiding .huiding {
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    height: 0.36rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .daka .share_huiding .huiding span {
+    color: #fff;
+    height: 0.48rem;
+    line-height: 0.36rem;
+    font-size: 0.16rem;
+  }
+  .daka .weizhi {
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+    height: 0.12rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .daka .content {
+    padding-left: 0.15rem;
+    position: relative;
+    padding-right: 0.15rem;
+    border: 1px solid #e7eaec;
+  }
+  .daka .content .label {
+    display: inline-block;
+    padding: 0.05rem 0.1rem 0.03rem 0.08rem;
+    color: #FFFFFF;
+    background-color: #CEA975;
+    margin-top: 0.21rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .daka .content .title {
+    padding-bottom: 0rem;
+    border-bottom: 1px solid #e7eaec;
+  }
+  .daka .content .title .little_title {
+    width: 100%;
+    font-size: 0.24rem;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    color: #333333;
+    line-height: 0.3rem;
+    padding-bottom: 0;
+  }
+  .daka .content .title .see_num {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    width: 100%;
+    float: none;
+  }
+  .daka .content .title .see_num .num {
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #666666;
+    padding-left: 0.1rem;
+    line-height: 0.12rem;
+  }
+  .daka .content .title .see_num .see {
+    font-size: 0.12rem;
+  }
+  .daka .content .fenxiang {
+    display: none;
+    position: absolute;
+    width: 0.46rem;
+    text-align: right;
+    top: 0.11rem;
+    left: -0.56rem;
+  }
+  .daka .content .fenxiang span {
+    padding-top: 0.1rem;
+    text-align: right;
+    display: block;
+    font-size: 0.3rem;
+  }
+  .daka .content .fenxiang .weibo {
+    color: #f12a20;
+  }
+  .daka .content .fenxiang .kongjian {
+    color: #fede2b;
+  }
+  .daka .content .fenxiang .weixin {
+    color: #56b151;
+  }
+  .daka .content .fenxiang .qie {
+    color: #158dfc;
+  }
+  .daka .content .jieshao {
+    text-align: center;
+    padding: 0.29rem 0 0.29rem 0;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    color: #666666;
+    line-height: 0.22rem;
+  }
+  .daka .content .img_box {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 0.4rem;
+  }
+  .daka .content .img_box img {
+    display: inline-block;
+    height: 7.53rem;
+    width: 100%;
+  }
+  .daka .content .jieshao2 {
+    text-align: center;
+    padding: 0.29rem 0 0.29rem 0;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    color: #666666;
+    line-height: 0.22rem;
+  }
 }

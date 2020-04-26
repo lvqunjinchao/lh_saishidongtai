@@ -194,7 +194,7 @@
   background-color: #f2f2f2;
 }
 .company .list {
-  padding: 0.8rem 0 0.8rem 0;
+  padding: 1rem 0 1rem 0;
 }
 .company .list .item .main_img img {
   width: 0.97rem;
@@ -430,11 +430,9 @@
   float: left;
   padding-top: 0.43rem;
   padding-bottom: 0.4rem;
-  height: 0.36rem;
   font-size: 0.36rem;
   font-weight: bold;
   color: #333333;
-  line-height: 0.6rem;
 }
 .saishixinwen .title .title_right {
   float: right;
@@ -525,7 +523,6 @@
   font-weight: 400;
   box-sizing: border-box;
   color: #ffffff;
-  line-height: 0.6rem;
 }
 .saishixinwen .video .video_right img {
   width: 100%;
@@ -695,7 +692,7 @@
     height: 100%;
     width: 100%;
     top: 0;
-    z-index: 200;
+    z-index: 400;
     left: 0;
   }
   .menu_zhezhao .left {
@@ -717,7 +714,6 @@
     font-family: Source Han Sans CN;
     font-weight: 400;
     color: #333333;
-    line-height: 32px;
   }
   .menu_zhezhao .right .last_menu_item {
     border-bottom: 1px solid #EEEEEE !important;
@@ -740,6 +736,13 @@
     padding-left: 0.24rem;
     padding-right: 0.24rem;
   }
+  .header {
+    height: 0.8rem;
+  }
+  .header .warp {
+    padding-top: 0.22rem;
+    padding-bottom: 0.22rem;
+  }
   .header .warp .flex_box {
     width: 100%;
     display: flex;
@@ -747,7 +750,13 @@
     align-items: center;
   }
   .header .warp .nav_left .logo {
+    width: 1.69rem;
+    height: 0.36rem;
     margin-right: 0;
+  }
+  .header .warp .nav_left .logo img {
+    height: 100%;
+    width: 100%;
   }
   .header .warp .nav_left .nav_detail {
     display: none;
@@ -761,7 +770,7 @@
   }
   .header .warp .nav_right .padduan span {
     display: inline-block;
-    font-size: 22px;
+    font-size: 0.22rem;
     color: #333;
     font-weight: 400;
     padding: 0 15px;
@@ -772,8 +781,8 @@
     right: 0;
     padding: 14px;
     display: inline-block;
-    height: 22px;
-    width: 22px;
+    height: 0.22rem;
+    width: 0.22rem;
     background-color: #005AAA;
   }
   .header .warp .nav_right .padduan .close_menu span {
@@ -781,6 +790,7 @@
     padding: 0;
   }
   .banner {
+    width: 100%;
     /*需要分页自定义css*/
   }
   .banner .pager {
@@ -818,13 +828,342 @@
     margin-top: -0.03rem;
   }
   .banner img {
-    height: 4.24rem;
+    height: 3.5rem;
   }
   .banner .btn_prev {
-    left: 14px;
+    left: 0.14rem;
+  }
+  .banner .btn_prev i {
+    font-size: 0.22rem;
   }
   .banner .btn_next {
-    right: 14px;
+    right: 0.14rem;
+  }
+  .banner .btn_next i {
+    font-size: 0.22rem;
+  }
+  .company {
+    background-color: #f2f2f2;
+  }
+  .company .list {
+    padding: 0.24rem 0 0.24rem 0;
+  }
+  .company .list .item .main_img {
+    padding-top: 0.21rem;
+  }
+  .company .list .item .main_img img {
+    width: 0.79rem;
+    height: 0.25rem;
+  }
+  .company .list .item .danwei {
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.18rem;
+  }
+  .company .list .item .weixin_img {
+    display: inline-block;
+    padding-right: 0.2rem;
+  }
+  .company .list .item .weixin_img p {
+    padding-top: 0.11rem;
+    text-align: center;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.18rem;
+  }
+  .company .list .item .weixin_img img {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+  .company .list .item .app_img {
+    display: inline-block;
+  }
+  .company .list .item .app_img p {
+    padding-top: 0.1rem;
+    text-align: center;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .company .list .item .app_img img {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+  .company .list .item .detail {
+    padding-top: 0.3rem;
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .company .list .item:last-child {
+    text-align: right;
+  }
+  .saishixinwen .title .title_left {
+    float: left;
+    padding-top: 0.29rem;
+    padding-bottom: 0.29rem;
+    font-size: 0.24rem;
+    font-weight: bold;
+    color: #333333;
+  }
+  .saishixinwen .title .title_right {
+    float: right;
+    padding: 0.12rem 0.19rem 0.14rem 0.17rem;
+    border: 1px solid #666666;
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.16rem;
+    border-radius: 0.2rem;
+    margin-top: 0.21rem;
+    margin-bottom: 0.21rem;
+  }
+  .saishixinwen .video .video_left {
+    width: 6.3rem;
+    height: 3.1rem;
+    cursor: pointer;
+    margin-right: 0.19rem;
+  }
+  .saishixinwen .video .video_left a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .saishixinwen .video .video_left img {
+    width: 100%;
+    height: 100%;
+  }
+  .saishixinwen .video .video_left .bottom {
+    position: absolute;
+    padding: 0 0.1rem 0.08rem 0.17rem;
+    vertical-align: middle;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+  }
+  .saishixinwen .video .video_left .bottom .bottom_left {
+    float: left;
+    padding-top: 0.06rem;
+    height: 0.16rem;
+    font-size: 0.16rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .saishixinwen .video .video_left .bottom .bottom_right {
+    float: right;
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.07rem 0.1rem 0.09rem 0.11rem;
+    border: 1px solid #666666;
+    border-radius: 0.2rem;
+  }
+  .saishixinwen .video .video_left .bofang {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .saishixinwen .video .video_left .bofang span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    font-size: 0.42rem;
+    margin-top: -0.21rem;
+    margin-left: -0.21rem;
+    color: #FFFFFF;
+  }
+  .saishixinwen .video .video_right {
+    cursor: pointer;
+  }
+  .saishixinwen .video .video_right .tishi {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.14rem 0.1rem 0.16rem 0.1rem;
+    font-size: 0.16rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    box-sizing: border-box;
+    color: #ffffff;
+  }
+  .saishixinwen .video .video_right img {
+    width: 100%;
+    height: 100%;
+  }
+  .saishixinwen .video .video_right .top {
+    position: relative;
+    width: 3.11rem;
+    height: 1.46rem;
+  }
+  .saishixinwen .video .video_right .bottom {
+    padding-top: 0.2rem;
+    position: relative;
+    width: 3.11rem;
+    height: 1.46rem;
+  }
+  .saishixinwen .table_box {
+    background: #eef0f1;
+    margin-top: 0.3rem;
+    margin-bottom: 0.24rem;
+    padding-top: 0.23rem;
+    padding-bottom: 0.22rem;
+  }
+  .saishixinwen .table_box .table_left .tab_bar {
+    cursor: pointer;
+    padding-left: 0.27rem;
+    padding-right: 0.28rem;
+    position: relative;
+    width: 25%;
+    border-right: 1px solid #333;
+    font-size: 0.16rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #333333;
+    line-height: 0.18rem;
+  }
+  .saishixinwen .table_box .table_left .tab_bar .xiahuaxian {
+    height: 0.03rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.31rem;
+    bottom: -0.08rem;
+    width: 0.62rem;
+    background-color: #005AAA;
+  }
+  .saishixinwen .table_box .table_left .tab_bar:last-child {
+    border-right: 0;
+    padding-right: 0;
+  }
+  .saishixinwen .table_box .table_right {
+    text-align: right;
+    padding-right: 0.12rem;
+  }
+  .saishixinwen .table_box .table_right span {
+    font-size: 0.16rem;
+    background-color: #005AAA;
+    color: #FFFFFF;
+    padding: 0.08rem 0.16rem;
+    vertical-align: sub;
+    border-top-right-radius: 0.05rem;
+    border-bottom-right-radius: 0.05rem;
+  }
+  .saishixinwen .table_box .table_right input {
+    width: 1.17rem;
+    background-color: #FFFFFF;
+    border-top-left-radius: 0.05rem;
+    border-bottom-left-radius: 0.05rem;
+    height: 0.12rem;
+    padding: 0.09rem 0.11rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.6rem;
+    border: 1px solid #dbddde;
+  }
+  .saishixinwen .list {
+    padding-left: 0.59rem;
+    padding-right: 0.57rem;
+  }
+  .saishixinwen .list .item {
+    padding-top: 0.31rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #eef0f1;
+  }
+  .saishixinwen .list .item .left {
+    vertical-align: top;
+    width: 3.2rem;
+    height: 1.79rem;
+    cursor: pointer;
+    box-sizing: content-box;
+    padding-right: 0.27rem;
+  }
+  .saishixinwen .list .item .left img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+  .saishixinwen .list .item .right {
+    vertical-align: top;
+    width: 4.95rem;
+    padding-top: 0.05rem;
+  }
+  .saishixinwen .list .item .right .label {
+    display: inline-block;
+    padding: 0.04rem 0.07rem 0.07rem 0.08rem;
+    font-size: 0.14rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #005AAA;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .saishixinwen .list .item .right .saishi {
+    padding-top: 0.09rem;
+    padding-bottom: 0.29rem;
+    cursor: pointer;
+    font-size: 0.24rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+  }
+  .saishixinwen .list .item .right .xiangqing {
+    font-size: 0.14rem;
+    cursor: pointer;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.18rem;
+    padding-bottom: 0.2rem;
+  }
+  .saishixinwen .list .item .right .time {
+    font-size: 0.14rem;
+    cursor: pointer;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+  }
+  .saishixinwen .list .item .right:hover .saishi {
+    color: #005AAA;
+  }
+  .saishixinwen .list .item .right:hover .xiangqing {
+    color: #005AAA;
+  }
+  .saishixinwen .list .item:nth-child(1) {
+    padding-top: 0;
+  }
+  .saishixinwen .loadmore_box {
+    text-align: center;
+    margin-top: 0.3rem;
+    margin-bottom: 0.4rem;
+  }
+  .saishixinwen .loadmore_box .loadmore {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.08rem 0.21rem 0.1rem 0.2rem;
+    border-radius: 0.2rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.18rem;
+    border: 1px solid #e7eaec;
   }
 }
 @media screen and (max-width: 751px) {
@@ -858,7 +1197,7 @@
   }
   .menu_zhezhao .right .menu_item {
     border-top: 1px solid #EEEEEE;
-    padding: 0.5rem 0 0.5rem 0.3rem;
+    padding: 0.25rem 0 0.24rem 0.15rem;
     font-size: 14px;
     font-family: Source Han Sans CN;
     font-weight: 400;
@@ -869,25 +1208,40 @@
   }
   .menu_zhezhao .right .login_success_pad_phone {
     position: absolute;
-    top: 10.72rem;
-    left: 0.3rem;
+    top: 5.41rem;
+    left: 0.15rem;
     display: inline-block;
   }
   .menu_zhezhao .right .login_success_pad_phone span {
-    font-size: 0.28rem;
+    font-size: 0.14rem;
   }
   .menu_zhezhao .right .login_success_pad_phone .name_tuichu {
     display: inline-block;
-    padding-left: 0.4rem;
+    padding-left: 0.2rem;
   }
   .menu_zhezhao .right .login_success_pad_phone .name_tuichu i {
     display: inline-block;
-    font-size: 0.28rem;
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
+    font-size: 0.14rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+  .header {
+    height: 0.5rem;
+  }
+  .header .warp {
+    padding-top: 0.14rem;
+    padding-bottom: 0.14rem;
   }
   .header .warp .flex_box .nav_left {
     width: 60%;
+  }
+  .header .warp .flex_box .nav_left .logo {
+    width: 1.03rem;
+    height: 0.22rem;
+  }
+  .header .warp .flex_box .nav_left .logo img {
+    width: 100%;
+    height: 100%;
   }
   .header .warp .flex_box .nav_right {
     width: 40%;
@@ -904,7 +1258,7 @@
   }
   .banner .pager {
     position: absolute;
-    bottom: 0.16rem;
+    bottom: 0.08rem;
     text-align: center;
     width: 100%;
   }
@@ -916,34 +1270,90 @@
     cursor: pointer;
     font-family: "iconfont" !important;
     color: #fff;
-    font-size: 0.26rem;
+    font-size: 0.12rem;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
-    width: 0.1rem;
-    height: 0.1rem;
+    width: 0.05rem;
+    height: 0.05rem;
     background: #ffffff;
     border-radius: 50%;
   }
   .banner .pager li.cur::before {
     content: '';
-    width: 0.22rem;
-    height: 0.22rem;
+    width: 0.11rem;
+    height: 0.11rem;
     position: absolute;
     border: 1px solid #fff;
     border-radius: 50%;
     top: -50%;
     left: -50%;
-    margin-left: -0.03rem;
-    margin-top: -0.03rem;
+    margin-left: -0.02rem;
+    margin-top: -0.017rem;
   }
   .banner img {
-    height: 3rem;
+    height: 1.5rem;
   }
   .banner .btn_next {
     display: none !important;
   }
   .banner .btn_prev {
     display: none !important;
+  }
+  .company .warp2 .list {
+    padding-top: 0.29rem;
+    padding-bottom: 0.3rem;
+  }
+  .company .warp2 .list .item {
+    width: 33.33333%;
+    vertical-align: top;
+    padding-right: 10px;
+  }
+  .company .warp2 .list .item p {
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .company .warp2 .list .item .main_img {
+    padding-top: 0.09rem;
+  }
+  .company .warp2 .list .item .main_img img {
+    height: 0.21rem;
+    width: 0.62rem;
+  }
+  .company .warp2 .list .item .detail {
+    line-height: auto;
+    padding-top: 0.14rem;
+    line-height: 0.18rem;
+  }
+  .company .warp2 .list .item .weixin_img {
+    padding: 0.19rem 0.14rem 0.13rem 0.14rem;
+    background-color: #fff;
+    margin-right: 0.4rem;
+  }
+  .company .warp2 .list .item .weixin_img img {
+    width: 0.72rem;
+    height: 0.72rem;
+  }
+  .company .warp2 .list .item .weixin_img p {
+    padding-top: 0.09rem;
+  }
+  .company .warp2 .list .item .app_img {
+    padding: 0.19rem 0.14rem 0.13rem 0.14rem;
+    background-color: #fff;
+  }
+  .company .warp2 .list .item .app_img img {
+    width: 0.72rem;
+    height: 0.72rem;
+  }
+  .company .warp2 .list .item .app_img p {
+    padding-top: 0.09rem;
+  }
+  .company .warp2 .list .item:last-child {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.2rem;
   }
   .footer {
     width: 100%;
@@ -957,12 +1367,11 @@
   .footer .warp .bottom {
     margin: 0;
     border: none;
-    padding: 0 10px;
+    padding: 0 0.1rem;
   }
   .footer .warp .bottom span,
   .footer .warp .bottom a {
-    font-size: 0.24rem;
-    line-height: 1.5;
+    font-size: 0.12rem;
     vertical-align: middle;
   }
   .footer .warp .bottom .wangzhan {
@@ -970,5 +1379,401 @@
   }
   .footer .warp .bottom .wangzhan a {
     color: #0c5ca8;
+  }
+  .popup {
+    width: 100%;
+    height: 5.13rem;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-left: 0;
+    background-color: #7f7f7f;
+    padding: 15px;
+    z-index: 301;
+  }
+  .popup .content_box {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+  }
+  .popup .content_box .content {
+    position: relative;
+    padding: 0.5rem 0 0 0;
+  }
+  .popup .content_box .content .close_popup {
+    cursor: pointer;
+    position: absolute;
+    right: 0.17rem;
+    top: 0.17rem;
+    height: 0.24rem;
+    width: 0.24rem;
+    text-align: center;
+    line-height: 0.24rem;
+    background-color: #000000;
+    border-radius: 50%;
+  }
+  .popup .content_box .content .close_popup span {
+    color: #FFFFFF;
+    font-size: 0.14rem;
+  }
+  .popup .content_box .content .popup_video {
+    position: relative;
+  }
+  .popup .content_box .content .popup_video > video {
+    width: 100%;
+    height: 1.98rem;
+  }
+  .popup .content_box .content .popup_video img {
+    width: 100%;
+    height: 1.98rem;
+  }
+  .popup .content_box .content .popup_video .bofang {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .popup .content_box .content .popup_video .bofang span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    font-size: 0.32rem;
+    margin-top: -0.16rem;
+    margin-left: -0.16rem;
+    color: #FFFFFF;
+  }
+  .popup .content_box .content .bottom .title {
+    height: 0.14rem;
+    padding-top: 0.2rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.24rem;
+  }
+  .popup .content_box .content .bottom .time {
+    height: 0.14rem;
+    padding-bottom: 0.16rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.24rem;
+  }
+  .popup .content_box .content .bottom .shuoming {
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #666666;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    line-height: 0.18rem;
+    padding-bottom: 0.5rem;
+  }
+  .popup .content_box .content .zhiwei {
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #666666;
+    line-height: 24px;
+  }
+  .saishixinwen .title .title_left {
+    float: left;
+    padding-top: 0.19rem;
+    padding-bottom: 0.18rem;
+    font-size: 0.24rem;
+    font-weight: bold;
+    color: #333333;
+  }
+  .saishixinwen .title .title_right {
+    float: right;
+    padding: 0.24rem 0 0.22rem 0;
+    font-size: 0.12rem;
+    border: 0;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.16rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .saishixinwen .video .video_left {
+    display: block;
+    width: 100%;
+    height: 1.7rem;
+    cursor: pointer;
+    margin-right: 0;
+    padding-bottom: 0.2rem;
+  }
+  .saishixinwen .video .video_left a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .saishixinwen .video .video_left img {
+    width: 100%;
+    height: 100%;
+  }
+  .saishixinwen .video .video_left .bottom {
+    position: absolute;
+    padding: 0 0.1rem 0.08rem 0.1rem;
+    vertical-align: middle;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+  }
+  .saishixinwen .video .video_left .bottom .bottom_left {
+    float: left;
+    height: 0.16rem;
+    padding-top: 0;
+    width: 2.62rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .saishixinwen .video .video_left .bottom .bottom_right {
+    float: right;
+    font-size: 0.12rem;
+    padding: 0;
+    border: 0;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .saishixinwen .video .video_left .bofang {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .saishixinwen .video .video_left .bofang span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    font-size: 0.22rem;
+    margin-top: -0.11rem;
+    margin-left: -0.11rem;
+    color: #FFFFFF;
+  }
+  .saishixinwen .video .video_right {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+  }
+  .saishixinwen .video .video_right .tishi {
+    position: static;
+    width: 100%;
+    font-size: 0.12rem;
+    padding: 0.1rem 0 0 0;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    box-sizing: border-box;
+    color: #ffffff;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .saishixinwen .video .video_right img {
+    width: 100%;
+    height: 100%;
+  }
+  .saishixinwen .video .video_right .top {
+    width: 1.62rem;
+    position: relative;
+    height: auto;
+  }
+  .saishixinwen .video .video_right .top img {
+    width: 100%;
+    height: 0.76rem;
+  }
+  .saishixinwen .video .video_right .bottom {
+    width: 1.62rem;
+    padding-top: 0;
+    height: auto;
+    position: relative;
+  }
+  .saishixinwen .video .video_right .bottom img {
+    width: 100%;
+    height: 0.76rem;
+  }
+  .saishixinwen .table_box {
+    background: #eef0f1;
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+    padding-top: 0.18rem;
+    padding-bottom: 0.18rem;
+  }
+  .saishixinwen .table_box .table_left {
+    width: 100%;
+    display: block;
+  }
+  .saishixinwen .table_box .table_left .tab_bar {
+    cursor: pointer;
+    padding-left: 0.11rem;
+    padding-right: 0.11rem;
+    position: relative;
+    width: 25%;
+    border-right: 1px solid #333;
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #333333;
+    line-height: 0.18rem;
+    text-align: center;
+  }
+  .saishixinwen .table_box .table_left .tab_bar .xiahuaxian {
+    height: 0.03rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.275rem;
+    bottom: -0.08rem;
+    width: 0.55rem;
+    background-color: #005AAA;
+  }
+  .saishixinwen .table_box .table_left .tab_bar:last-child {
+    border-right: 0;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .saishixinwen .table_box .table_right {
+    display: none;
+    text-align: right;
+    padding-right: 0.12rem;
+  }
+  .saishixinwen .table_box .table_right span {
+    font-size: 0.16rem;
+    background-color: #005AAA;
+    color: #FFFFFF;
+    padding: 0.08rem 0.16rem;
+    vertical-align: sub;
+    border-top-right-radius: 0.05rem;
+    border-bottom-right-radius: 0.05rem;
+  }
+  .saishixinwen .table_box .table_right input {
+    width: 1.17rem;
+    background-color: #FFFFFF;
+    border-top-left-radius: 0.05rem;
+    border-bottom-left-radius: 0.05rem;
+    height: 0.12rem;
+    padding: 0.09rem 0.11rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.6rem;
+    border: 1px solid #dbddde;
+  }
+  .saishixinwen .list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .saishixinwen .list .item {
+    width: 100%;
+    display: block;
+    padding-top: 0.2rem;
+    padding-bottom: 0.05rem;
+    border-bottom: 1px solid transparent;
+  }
+  .saishixinwen .list .item .left {
+    vertical-align: top;
+    width: 100%;
+    height: 1.92rem;
+    cursor: pointer;
+    box-sizing: content-box;
+    padding-right: 0;
+  }
+  .saishixinwen .list .item .left img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+  .saishixinwen .list .item .right {
+    width: 100%;
+    display: block;
+    padding-top: 0.2rem;
+  }
+  .saishixinwen .list .item .right .label {
+    display: inline-block;
+    padding: 0.03rem 0.07rem 0.05rem 0.06rem;
+    font-size: 0.12rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #005AAA;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .saishixinwen .list .item .right .saishi {
+    padding-top: 0.1rem;
+    padding-bottom: 0.14rem;
+    cursor: pointer;
+    font-size: 0.18rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+  }
+  .saishixinwen .list .item .right .xiangqing {
+    display: none;
+    font-size: 0.14rem;
+    cursor: pointer;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.12rem;
+    padding-bottom: 0.2rem;
+  }
+  .saishixinwen .list .item .right .time {
+    font-size: 0.12rem;
+    cursor: pointer;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+  }
+  .saishixinwen .list .item .right:hover .saishi {
+    color: #005AAA;
+  }
+  .saishixinwen .list .item .right:hover .xiangqing {
+    color: #005AAA;
+  }
+  .saishixinwen .list .item:nth-child(1) {
+    padding-top: 0;
+  }
+  .saishixinwen .loadmore_box {
+    text-align: center;
+    margin-top: 0.32rem;
+    margin-bottom: 0.7rem;
+  }
+  .saishixinwen .loadmore_box .loadmore {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.08rem 0.21rem 0.1rem 0.2rem;
+    border-radius: 0.2rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.18rem;
+    border: 1px solid #e7eaec;
   }
 }

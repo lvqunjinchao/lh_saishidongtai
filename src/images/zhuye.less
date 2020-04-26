@@ -210,7 +210,7 @@
 .company {
     background-color: #f2f2f2;
     .list {
-        padding: 0.8rem 0 0.8rem 0;
+        padding: 1rem 0 1rem 0;
         .item {
             .main_img {
                 img {
@@ -471,11 +471,9 @@
             float: left;
             padding-top: 0.43rem;
             padding-bottom: 0.4rem;
-            height: 0.36rem;
             font-size: 0.36rem;
             font-weight: bold;
             color: rgba(51, 51, 51, 1);
-            line-height: 0.6rem;
         }
         .title_right {
             float: right;
@@ -567,7 +565,6 @@
                 font-weight: 400;
                 box-sizing: border-box;
                 color: rgba(255, 255, 255, 1);
-                line-height: 0.6rem;
             }
             img {
                 width: 100%;
@@ -748,7 +745,7 @@
         height: 100%;
         width: 100%;
         top: 0;
-        z-index: 200;
+        z-index: 400;
         left: 0;
         .left {
             width: 50%;
@@ -768,7 +765,6 @@
                 font-family: Source Han Sans CN;
                 font-weight: 400;
                 color: rgba(51, 51, 51, 1);
-                line-height: 32px;
             }
             .last_menu_item {
                 border-bottom: 1px solid #EEEEEE !important;
@@ -794,7 +790,10 @@
         }
     } // 头部
     .header {
+        height: 0.8rem;
         .warp {
+            padding-top: 0.22rem;
+            padding-bottom: 0.22rem;
             .flex_box {
                 width: 100%;
                 display: flex;
@@ -803,7 +802,13 @@
             }
             .nav_left {
                 .logo {
+                    width: 1.69rem;
+                    height: 0.36rem;
                     margin-right: 0;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
                 }
                 .nav_detail {
                     display: none;
@@ -818,7 +823,7 @@
                     display: block;
                     span {
                         display: inline-block;
-                        font-size: 22px;
+                        font-size: 0.22rem;
                         color: #333;
                         font-weight: 400;
                         padding: 0 15px;
@@ -829,8 +834,8 @@
                         right: 0;
                         padding: 14px;
                         display: inline-block;
-                        height: 22px;
-                        width: 22px;
+                        height: 0.22rem;
+                        width: 0.22rem;
                         background-color: #005AAA;
                         span {
                             color: #fff;
@@ -842,6 +847,7 @@
         }
     } // 轮播图
     .banner {
+        width: 100%;
         .pager {
             position: absolute;
             bottom: 0.24rem;
@@ -878,13 +884,352 @@
             margin-top: -0.03rem;
         }
         img {
-            height: 4.24rem;
+            height: 3.5rem;
         }
         .btn_prev {
-            left: 14px;
+            left: 0.14rem;
+            i {
+                font-size: 0.22rem;
+            }
         }
         .btn_next {
-            right: 14px;
+            right: 0.14rem;
+            i {
+                font-size: 0.22rem;
+            }
+        }
+    } //主办单位
+    .company {
+        background-color: #f2f2f2;
+        .list {
+            padding: 0.24rem 0 0.24rem 0;
+            .item {
+                .main_img {
+                    padding-top: 0.21rem;
+                    img {
+                        width: 0.79rem;
+                        height: 0.25rem;
+                    }
+                }
+                .danwei {
+                    font-size: 0.14rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    color: rgba(51, 51, 51, 1);
+                    line-height: 0.18rem;
+                }
+                .weixin_img {
+                    display: inline-block;
+                    padding-right: 0.2rem;
+                    p {
+                        padding-top: 0.11rem;
+                        text-align: center;
+                        font-size: 0.12rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(51, 51, 51, 1);
+                        line-height: 0.18rem;
+                    }
+                    img {
+                        height: 0.75rem;
+                        width: 0.75rem;
+                    }
+                }
+                .app_img {
+                    display: inline-block;
+                    p {
+                        padding-top: 0.1rem;
+                        text-align: center;
+                        font-size: 0.12rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(51, 51, 51, 1);
+                    }
+                    img {
+                        height: 0.75rem;
+                        width: 0.75rem;
+                    }
+                }
+                .detail {
+                    padding-top: 0.3rem;
+                    font-size: 0.14rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    color: rgba(51, 51, 51, 1);
+                }
+            }
+            .item:last-child {
+                text-align: right;
+            }
+        }
+    } // 赛事新闻
+    .saishixinwen {
+        .title {
+            .title_left {
+                float: left;
+                padding-top: 0.29rem;
+                padding-bottom: 0.29rem;
+                font-size: 0.24rem;
+                font-weight: bold;
+                color: rgba(51, 51, 51, 1);
+            }
+            .title_right {
+                float: right;
+                padding: 0.12rem 0.19rem 0.14rem 0.17rem;
+                border: 1px solid rgba(102, 102, 102, 1);
+                font-size: 0.14rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(51, 51, 51, 1);
+                line-height: 0.16rem;
+                border-radius: 0.2rem;
+                margin-top: 0.21rem;
+                margin-bottom: 0.21rem;
+            }
+        }
+        .video {
+            .video_left {
+                width: 6.3rem;
+                height: 3.1rem;
+                cursor: pointer;
+                margin-right: 0.19rem;
+                a {
+                    display: inline-block;
+                    height: 100%;
+                    width: 100%;
+                    position: relative;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .bottom {
+                    position: absolute;
+                    padding: 0 0.1rem 0.08rem 0.17rem;
+                    vertical-align: middle;
+                    box-sizing: border-box;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 200;
+                    .bottom_left {
+                        float: left;
+                        padding-top: 0.06rem;
+                        height: 0.16rem;
+                        font-size: 0.16rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(255, 255, 255, 1);
+                    }
+                    .bottom_right {
+                        float: right;
+                        font-size: 0.14rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(255, 255, 255, 1);
+                        padding: 0.07rem 0.1rem 0.09rem 0.11rem;
+                        border: 1px solid rgba(102, 102, 102, 1);
+                        border-radius: 0.2rem;
+                    }
+                }
+                .bofang {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 100;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    span {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        display: inline-block;
+                        font-size: 0.42rem;
+                        margin-top: -0.21rem;
+                        margin-left: -0.21rem;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            .video_right {
+                cursor: pointer;
+                .tishi {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 0.14rem 0.1rem 0.16rem 0.1rem;
+                    font-size: 0.16rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    box-sizing: border-box;
+                    color: rgba(255, 255, 255, 1);
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .top {
+                    position: relative;
+                    width: 3.11rem;
+                    height: 1.46rem;
+                }
+                .bottom {
+                    padding-top: 0.2rem;
+                    position: relative;
+                    width: 3.11rem;
+                    height: 1.46rem;
+                }
+            }
+        }
+        .table_box {
+            background: rgba(238, 240, 241, 1);
+            margin-top: 0.3rem;
+            margin-bottom: 0.24rem;
+            padding-top: 0.23rem;
+            padding-bottom: 0.22rem;
+            .table_left {
+                .tab_bar {
+                    cursor: pointer;
+                    padding-left: 0.27rem;
+                    padding-right: 0.28rem;
+                    position: relative;
+                    width: 25%;
+                    border-right: 1px solid #333;
+                    font-size: 0.16rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 500;
+                    color: rgba(51, 51, 51, 1);
+                    line-height: 0.18rem;
+                    .xiahuaxian {
+                        height: 0.03rem;
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -0.31rem;
+                        bottom: -0.08rem;
+                        width: 0.62rem;
+                        background-color: #005AAA;
+                    }
+                }
+                .tab_bar:last-child {
+                    border-right: 0;
+                    padding-right: 0;
+                }
+            }
+            .table_right {
+                text-align: right;
+                padding-right: 0.12rem;
+                span {
+                    font-size: 0.16rem;
+                    background-color: #005AAA;
+                    color: #FFFFFF;
+                    padding: 0.08rem 0.16rem;
+                    vertical-align: sub;
+                    border-top-right-radius: 0.05rem;
+                    border-bottom-right-radius: 0.05rem;
+                }
+                input {
+                    width: 1.17rem;
+                    background-color: #FFFFFF;
+                    border-top-left-radius: 0.05rem;
+                    border-bottom-left-radius: 0.05rem;
+                    height: 0.12rem;
+                    padding: 0.09rem 0.11rem;
+                    font-size: 0.12rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    color: rgba(153, 153, 153, 1);
+                    line-height: 0.6rem;
+                    border: 1px solid rgba(219, 221, 222, 1);
+                }
+            }
+        }
+        .list {
+            padding-left: 0.59rem;
+            padding-right: 0.57rem;
+            .item {
+                padding-top: 0.31rem;
+                padding-bottom: 0.3rem;
+                border-bottom: 1px solid rgba(238, 240, 241, 1);
+                .left {
+                    vertical-align: top;
+                    width: 3.2rem;
+                    height: 1.79rem;
+                    cursor: pointer;
+                    box-sizing: content-box;
+                    padding-right: 0.27rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: inline-block;
+                    }
+                }
+                .right {
+                    vertical-align: top;
+                    width: 4.95rem;
+                    padding-top: 0.05rem;
+                    .label {
+                        display: inline-block;
+                        padding: 0.04rem 0.07rem 0.07rem 0.08rem;
+                        font-size: 0.14rem;
+                        cursor: pointer;
+                        color: #fff;
+                        background-color: #005AAA;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(255, 255, 255, 1);
+                    }
+                    .saishi {
+                        padding-top: 0.09rem;
+                        padding-bottom: 0.29rem;
+                        cursor: pointer;
+                        font-size: 0.24rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                    }
+                    .xiangqing {
+                        font-size: 0.14rem;
+                        cursor: pointer;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        line-height: 0.18rem;
+                        padding-bottom: 0.2rem;
+                    }
+                    .time {
+                        font-size: 0.14rem;
+                        cursor: pointer;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(153, 153, 153, 1);
+                    }
+                }
+                .right:hover .saishi {
+                    color: #005AAA;
+                }
+                .right:hover .xiangqing {
+                    color: #005AAA;
+                }
+            }
+            .item:nth-child(1) {
+                padding-top: 0;
+            }
+        }
+        .loadmore_box {
+            text-align: center;
+            margin-top: 0.3rem;
+            margin-bottom: 0.4rem;
+            .loadmore {
+                cursor: pointer;
+                display: inline-block;
+                padding: 0.08rem 0.21rem 0.1rem 0.2rem;
+                border-radius: 0.2rem;
+                font-size: 0.12rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(153, 153, 153, 1);
+                line-height: 0.18rem;
+                border: 1px solid rgba(231, 234, 236, 1);
+            }
         }
     }
 }
@@ -925,7 +1270,7 @@
             background-color: #fff;
             .menu_item {
                 border-top: 1px solid #EEEEEE;
-                padding: 0.5rem 0 0.5rem 0.3rem;
+                padding: 0.25rem 0 0.24rem 0.15rem;
                 font-size: 14px;
                 font-family: Source Han Sans CN;
                 font-weight: 400;
@@ -936,30 +1281,41 @@
             }
             .login_success_pad_phone {
                 position: absolute;
-                top: 10.72rem;
-                left: 0.3rem;
+                top: 5.41rem;
+                left: 0.15rem;
                 display: inline-block;
                 span {
-                    font-size: 0.28rem;
+                    font-size: 0.14rem;
                 }
                 .name_tuichu {
                     display: inline-block;
-                    padding-left: 0.4rem;
+                    padding-left: 0.2rem;
                     i {
                         display: inline-block;
-                        font-size: 0.28rem;
-                        padding-left: 0.4rem;
-                        padding-right: 0.4rem;
+                        font-size: 0.14rem;
+                        padding-left: 0.2rem;
+                        padding-right: 0.2rem;
                     }
                 }
             }
         }
     } // 头部
     .header {
+        height: 0.5rem;
         .warp {
+            padding-top: 0.14rem;
+            padding-bottom: 0.14rem;
             .flex_box {
                 .nav_left {
                     width: 60%;
+                    .logo {
+                        width: 1.03rem;
+                        height: 0.22rem;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
                 }
                 .nav_right {
                     width: 40%;
@@ -977,7 +1333,7 @@
     .banner {
         .pager {
             position: absolute;
-            bottom: 0.16rem;
+            bottom: 0.08rem;
             text-align: center;
             width: 100%;
         }
@@ -990,34 +1346,95 @@
             cursor: pointer;
             font-family: "iconfont" !important;
             color: #fff;
-            font-size: 0.26rem;
+            font-size: 0.12rem;
             font-style: normal;
             -webkit-font-smoothing: antialiased;
-            width: 0.1rem;
-            height: 0.1rem;
+            width: 0.05rem;
+            height: 0.05rem;
             background: rgba(255, 255, 255, 1);
             border-radius: 50%;
         }
         .pager li.cur::before {
             content: '';
-            width: 0.22rem;
-            height: 0.22rem;
+            width: 0.11rem;
+            height: 0.11rem;
             position: absolute;
             border: 1px solid #fff;
             border-radius: 50%;
             top: -50%;
             left: -50%;
-            margin-left: -0.03rem;
-            margin-top: -0.03rem;
+            margin-left: -0.02rem;
+            margin-top: -0.017rem;
         }
         img {
-            height: 3rem;
+            height: 1.5rem;
         }
         .btn_next {
             display: none !important;
         }
         .btn_prev {
             display: none !important;
+        }
+    } // 主办单位
+    // 主办单位
+    .company {
+        .warp2 {
+            .list {
+                padding-top: 0.29rem;
+                padding-bottom: 0.3rem;
+                .item {
+                    width: 33.33333%;
+                    vertical-align: top;
+                    padding-right: 10px;
+                    p {
+                        font-size: 0.12rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(51, 51, 51, 1);
+                    }
+                    .main_img {
+                        padding-top: 0.09rem;
+                        img {
+                            height: 0.21rem;
+                            width: 0.62rem;
+                        }
+                    }
+                    .detail {
+                        line-height: auto;
+                        padding-top: 0.14rem;
+                        line-height: 0.18rem;
+                    }
+                    .weixin_img {
+                        padding: 0.19rem 0.14rem 0.13rem 0.14rem;
+                        background-color: #fff;
+                        margin-right: 0.4rem;
+                        img {
+                            width: 0.72rem;
+                            height: 0.72rem;
+                        }
+                        p {
+                            padding-top: 0.09rem;
+                        }
+                    }
+                    .app_img {
+                        padding: 0.19rem 0.14rem 0.13rem 0.14rem;
+                        background-color: #fff;
+                        img {
+                            width: 0.72rem;
+                            height: 0.72rem;
+                        }
+                        p {
+                            padding-top: 0.09rem;
+                        }
+                    }
+                }
+                .item:last-child {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 0.2rem;
+                }
+            }
         }
     } //尾部开始 start
     .footer {
@@ -1030,11 +1447,10 @@
             .bottom {
                 margin: 0;
                 border: none;
-                padding: 0 10px;
+                padding: 0 0.1rem;
                 span,
                 a {
-                    font-size: .24rem;
-                    line-height: 1.5;
+                    font-size: 0.12rem;
                     vertical-align: middle;
                 }
                 .wangzhan {
@@ -1046,4 +1462,409 @@
             }
         }
     } // 尾部 end
+    // 弹窗
+    .popup {
+        width: 100%;
+        height: 5.13rem;
+        position: fixed;
+        top: 50%;
+        left: 0;
+        box-sizing: border-box;
+        margin-top: 0;
+        margin-left: 0;
+        background-color: #7f7f7f;
+        padding: 15px;
+        z-index: 301;
+        .content_box {
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            .content {
+                position: relative;
+                padding: 0.5rem 0 0 0;
+                .close_popup {
+                    cursor: pointer;
+                    position: absolute;
+                    right: 0.17rem;
+                    top: 0.17rem;
+                    height: 0.24rem;
+                    width: 0.24rem;
+                    text-align: center;
+                    line-height: 0.24rem;
+                    background-color: #000000;
+                    border-radius: 50%;
+                    span {
+                        color: #FFFFFF;
+                        font-size: 0.14rem;
+                    }
+                }
+                .popup_video {
+                    position: relative;
+                    &>video {
+                        width: 100%;
+                        height: 1.98rem;
+                    }
+                    img {
+                        width: 100%;
+                        height: 1.98rem;
+                    }
+                    .bofang {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        z-index: 100;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        span {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            display: inline-block;
+                            font-size: 0.32rem;
+                            margin-top: -0.16rem;
+                            margin-left: -0.16rem;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+                .bottom {
+                    .title {
+                        height: 0.14rem;
+                        padding-top: 0.2rem;
+                        padding-left: 0.1rem;
+                        padding-right: 0.1rem;
+                        padding-bottom: 0.1rem;
+                        font-size: 0.14rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(102, 102, 102, 1);
+                        line-height: 0.24rem;
+                    }
+                    .time {
+                        height: 0.14rem;
+                        padding-bottom: 0.16rem;
+                        padding-left: 0.1rem;
+                        padding-right: 0.1rem;
+                        font-size: 0.12rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(153, 153, 153, 1);
+                        line-height: 0.24rem;
+                    }
+                    .shuoming {
+                        font-size: 0.12rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(102, 102, 102, 1);
+                        padding-left: 0.1rem;
+                        padding-right: 0.1rem;
+                        line-height: 0.18rem;
+                        padding-bottom: 0.5rem;
+                    }
+                }
+                .zhiwei {
+                    font-size: 14px;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    color: rgba(102, 102, 102, 1);
+                    line-height: 24px;
+                }
+            }
+        }
+    } // 赛事新闻
+    .saishixinwen {
+        .title {
+            .title_left {
+                float: left;
+                padding-top: 0.19rem;
+                padding-bottom: 0.18rem;
+                font-size: 0.24rem;
+                font-weight: bold;
+                color: rgba(51, 51, 51, 1);
+            }
+            .title_right {
+                float: right;
+                padding: 0.24rem 0 0.22rem 0;
+                font-size: 0.12rem;
+                border: 0;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(51, 51, 51, 1);
+                line-height: 0.16rem;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+        .video {
+            .video_left {
+                display: block;
+                width: 100%;
+                height: 1.7rem;
+                cursor: pointer;
+                margin-right: 0;
+                padding-bottom: 0.2rem;
+                a {
+                    display: inline-block;
+                    height: 100%;
+                    width: 100%;
+                    position: relative;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .bottom {
+                    position: absolute;
+                    padding: 0 0.1rem 0.08rem 0.1rem;
+                    vertical-align: middle;
+                    box-sizing: border-box;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 200;
+                    .bottom_left {
+                        float: left;
+                        height: 0.16rem;
+                        padding-top: 0;
+                        width: 2.62rem;
+                        font-size: 0.12rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(255, 255, 255, 1);
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .bottom_right {
+                        float: right;
+                        font-size: 0.12rem;
+                        padding: 0;
+                        border: 0;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+                .bofang {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 100;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    span {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        display: inline-block;
+                        font-size: 0.22rem;
+                        margin-top: -0.11rem;
+                        margin-left: -0.11rem;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            .video_right {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                cursor: pointer;
+                .tishi {
+                    position: static;
+                    width: 100%;
+                    font-size: 0.12rem;
+                    padding: 0.1rem 0 0 0;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    box-sizing: border-box;
+                    color: rgba(255, 255, 255, 1);
+                    color: #333;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .top {
+                    width: 1.62rem;
+                    position: relative;
+                    height: auto;
+                    img {
+                        width: 100%;
+                        height: 0.76rem;
+                    }
+                }
+                .bottom {
+                    width: 1.62rem;
+                    padding-top: 0;
+                    height: auto;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 0.76rem;
+                    }
+                }
+            }
+        }
+        .table_box {
+            background: rgba(238, 240, 241, 1);
+            margin-top: 0.3rem;
+            margin-bottom: 0.2rem;
+            padding-top: 0.18rem;
+            padding-bottom: 0.18rem;
+            .table_left {
+                width: 100%;
+                display: block;
+                .tab_bar {
+                    cursor: pointer;
+                    padding-left: 0.11rem;
+                    padding-right: 0.11rem;
+                    position: relative;
+                    width: 25%;
+                    border-right: 1px solid #333;
+                    font-size: 0.14rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 500;
+                    color: rgba(51, 51, 51, 1);
+                    line-height: 0.18rem;
+                    text-align: center;
+                    .xiahuaxian {
+                        height: 0.03rem;
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -0.275rem;
+                        bottom: -0.08rem;
+                        width: 0.55rem;
+                        background-color: #005AAA;
+                    }
+                }
+                .tab_bar:last-child {
+                    border-right: 0;
+                    margin: 0 auto;
+                    padding-left: 0;
+                }
+            }
+            .table_right {
+                display: none;
+                text-align: right;
+                padding-right: 0.12rem;
+                span {
+                    font-size: 0.16rem;
+                    background-color: #005AAA;
+                    color: #FFFFFF;
+                    padding: 0.08rem 0.16rem;
+                    vertical-align: sub;
+                    border-top-right-radius: 0.05rem;
+                    border-bottom-right-radius: 0.05rem;
+                }
+                input {
+                    width: 1.17rem;
+                    background-color: #FFFFFF;
+                    border-top-left-radius: 0.05rem;
+                    border-bottom-left-radius: 0.05rem;
+                    height: 0.12rem;
+                    padding: 0.09rem 0.11rem;
+                    font-size: 0.12rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    color: rgba(153, 153, 153, 1);
+                    line-height: 0.6rem;
+                    border: 1px solid rgba(219, 221, 222, 1);
+                }
+            }
+        }
+        .list {
+            padding-left: 0;
+            padding-right: 0;
+            .item {
+                width: 100%;
+                display: block;
+                padding-top: 0.2rem;
+                padding-bottom: 0.05rem;
+                border-bottom: 1px solid transparent;
+                .left {
+                    vertical-align: top;
+                    width: 100%;
+                    height: 1.92rem;
+                    cursor: pointer;
+                    box-sizing: content-box;
+                    padding-right: 0;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: inline-block;
+                    }
+                }
+                .right {
+                    width: 100%;
+                    display: block;
+                    padding-top: 0.2rem;
+                    .label {
+                        display: inline-block;
+                        padding: 0.03rem 0.07rem 0.05rem 0.06rem;
+                        font-size: 0.12rem;
+                        cursor: pointer;
+                        color: #fff;
+                        background-color: #005AAA;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(255, 255, 255, 1);
+                    }
+                    .saishi {
+                        padding-top: 0.1rem;
+                        padding-bottom: 0.14rem;
+                        cursor: pointer;
+                        font-size: 0.18rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                    }
+                    .xiangqing {
+                        display: none;
+                        font-size: 0.14rem;
+                        cursor: pointer;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        line-height: 0.12rem;
+                        padding-bottom: 0.2rem;
+                    }
+                    .time {
+                        font-size: 0.12rem;
+                        cursor: pointer;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(153, 153, 153, 1);
+                    }
+                }
+                .right:hover .saishi {
+                    color: #005AAA;
+                }
+                .right:hover .xiangqing {
+                    color: #005AAA;
+                }
+            }
+            .item:nth-child(1) {
+                padding-top: 0;
+            }
+        }
+        .loadmore_box {
+            text-align: center;
+            margin-top: 0.32rem;
+            margin-bottom: 0.7rem;
+            .loadmore {
+                cursor: pointer;
+                display: inline-block;
+                padding: 0.08rem 0.21rem 0.1rem 0.2rem;
+                border-radius: 0.2rem;
+                font-size: 0.12rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(153, 153, 153, 1);
+                line-height: 0.18rem;
+                border: 1px solid rgba(231, 234, 236, 1);
+            }
+        }
+    }
 } //手机端开始 end

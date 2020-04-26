@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1630001",
+      "name": "回到顶部",
+      "font_class": "huidaodingbu",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "7165726",
+      "name": "fen_xiang",
+      "font_class": "fen_xiang",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
       "icon_id": "14055545",
       "name": "空间",
       "font_class": "kongjian1",

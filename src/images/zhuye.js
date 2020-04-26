@@ -6,7 +6,7 @@ $(document).ready(function() {
         loop: true,
         pager: ".js_pager",
         pagerHover: false,
-        speed: 3000,
+        // speed: 3000,
         startFn: function() {
             // console.log("1");
         },
@@ -133,6 +133,7 @@ $(document).ready(function() {
                     // 注意！select值(value)就等于选中option的值，可以找到category_id直接赋值就行，不用转换了
                     // console.log(data.xinwensaishi);
                     html2 += `<div class="item o_u o_df_1-2">
+                    <div class="item_content">
                     <div class="video_box">
                         <video src="" class="o_video" controls>
                             <source df="${item.df}" md="${item.md}" xs="${item.xs}"
@@ -148,6 +149,7 @@ $(document).ready(function() {
                     </p>
                     <div class="time">
                     ${item.time}
+                    </div>
                     </div>
                 </div>`
                 });
@@ -258,7 +260,7 @@ $(document).ready(function() {
     // 其他选项卡加载更多 end
 
 
-    // 点击出现弹窗
+    // 主页点击出现弹窗
     $('.saishixinwen .list').on('click', '.item', function() {
         var $this = $(this);
         unScroll();
@@ -267,7 +269,7 @@ $(document).ready(function() {
         $popup.siblings('.js_popup_all').removeClass('displaynone');
         // $('body').css({ overflow: 'hidden', height: "100%" });
     });
-    // 点击关闭弹窗
+    // 主页点击关闭弹窗
     $('.popup').on('click', '.js_close_popup', function() {
         var $this = $(this);
         removeUnScroll();
@@ -275,6 +277,7 @@ $(document).ready(function() {
         $this.parents('.popup').siblings('.js_popup_all').addClass('displaynone');
         // $('body').css('overflow', 'auto');
     });
+
 
 
 
@@ -306,10 +309,74 @@ $(document).ready(function() {
             });
             // 手机端回到顶部 end
 
+            // 大咖分享弹窗 start
+            // 打开
+            $('.daka .content .img_box').on('click', 'img', function() {
+                var $this = $(this);
+                unScroll();
+                var $daka_share = $('.daka_share');
+                $daka_share.removeClass('displaynone');
+                $daka_share.siblings('.daka_zhezhao').removeClass('displaynone');
+
+                var topjuli = ($('.daka_share').height()) * 0.5;
+                topjuli = topjuli + 15;
+                $('.daka_share').css('marginTop', -topjuli);
+
+                // $('body').css({ overflow: 'hidden', height: "100%" });
+            });
+            // 关闭
+            $('.daka_share').on('click', '.js_guanbi', function() {
+                var $this = $(this);
+                removeUnScroll();
+                $this.parents('.daka_share').addClass('displaynone');
+                $this.parents('.daka_share').siblings('.daka_zhezhao').addClass('displaynone');
+                // $('body').css('overflow', 'auto');
+            });
+            // 大咖分享弹窗 end
+
+            // 主页点击出现弹窗
+            $('.saishixinwen .list').on('click', '.item', function() {
+                var $this = $(this);
+                unScroll();
+                var $popup = $('.popup');
+                $popup.removeClass('displaynone');
+                $popup.siblings('.js_popup_all').removeClass('displaynone');
+                var topjuli2 = ($('.popup').height()) * 0.5;
+                topjuli2 = topjuli2 + 15;
+                $('.popup').css('marginTop', -topjuli2);
+                // $('body').css({ overflow: 'hidden', height: "100%" });
+            });
+            // 主页点击关闭弹窗
+            $('.popup').on('click', '.js_close_popup', function() {
+                var $this = $(this);
+                removeUnScroll();
+                $this.parents('.popup').addClass('displaynone');
+                $this.parents('.popup').siblings('.js_popup_all').addClass('displaynone');
+                // $('body').css('overflow', 'auto');
+            });
+
         }
         // width>750&&width<1200
         if (width > 750) {
-
+            // 大咖分享弹窗 start
+            // 打开
+            $('.daka .content .img_box').on('click', 'img', function() {
+                var $this = $(this);
+                unScroll();
+                var $daka_share = $('.daka_share');
+                $daka_share.removeClass('displaynone');
+                $daka_share.siblings('.daka_zhezhao').removeClass('displaynone');
+                // $('body').css({ overflow: 'hidden', height: "100%" });
+            });
+            // 关闭
+            $('.daka_share').on('click', '.js_guanbi', function() {
+                var $this = $(this);
+                removeUnScroll();
+                $this.parents('.daka_share').addClass('displaynone');
+                $this.parents('.daka_share').siblings('.daka_zhezhao').addClass('displaynone');
+                // $('body').css('overflow', 'auto');
+            });
+            // 大咖分享弹窗 end
 
         }
 

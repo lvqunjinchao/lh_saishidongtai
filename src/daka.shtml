@@ -76,9 +76,53 @@
             </div>
             <!--轮播图 end-->
 
+            <!-- 大咖pad分享 模块 start -->
+            <div class="daka_zhezhao displaynone"></div>
+            <div class="daka_share displaynone">
+                <div class="content">
+                    <div class="guanbi js_guanbi">
+                        <span class="iconfont">&#xe608;</span>
+                    </div>
+                    <div class="logo_box">
+                        <img src="./images/tupian/logo.png" alt="">
+                    </div>
+                    <div class="img_box">
+                        <img src="./images/tupian/图层 53.png" alt="">
+                    </div>
+                    <div class="fengcai">
+                        <span> 大咖风采</span>
+                    </div>
+                    <div class="share_title">
+                        8位大咖助阵颁奖盛典
+                    </div>
+                    <div class="time"> 发布时间 | 2010.03.30</div>
+                    <div class="baohan">
+                        本案位于奥北别墅区上城郡别墅，共三层别墅四居室户型，负一层入户门厅包含车库，业主日常回家主要入口，设计上重点以收纳储物为主...
+                    </div>
+                    <div class="bottom o_g">
+                        <img src="./images/tupian/图层 12.png" alt="">
+                        <div class="saoma">
+                            <span>
+                                这条赛事动态不错,长按二维码了解吧~~
+                            </span>
+                            <img src="./images/tupian/图层 10.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 大咖pad分享 模块 end -->
+
             <!-- 大咖模块 start -->
             <div class="daka o_g">
                 <div class="warp2">
+                    <div class="share_huiding">
+                        <div class="share">
+                            <span class="iconfont">&#xe612;</span>
+                        </div>
+                        <div class="huiding">
+                            <span class="iconfont">&#xe6a9;</span>
+                        </div>
+                    </div>
                     <div class="weizhi">
                         赛事动态 > 8位大咖风采
                     </div>
@@ -92,8 +136,10 @@
                         <div class="label">
                             大咖风采
                         </div>
-                        <div class="title">
-                            <span class="little_title">8位大咖助阵颁奖盛典</span>
+                        <div class="title o_g">
+                            <span class="little_title">
+                                8位大咖助阵颁奖现场为获奖嘉宾颁奖
+                            </span>
                             <div class="see_num">
                                 <span class="iconfont see">&#xe739;</span>
                                 <span class="num">3982</span>

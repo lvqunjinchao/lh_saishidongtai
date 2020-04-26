@@ -194,7 +194,7 @@
   background-color: #f2f2f2;
 }
 .company .list {
-  padding: 0.8rem 0 0.8rem 0;
+  padding: 1rem 0 1rem 0;
 }
 .company .list .item .main_img img {
   width: 0.97rem;
@@ -329,7 +329,6 @@
   font-family: Microsoft YaHei UI;
   font-weight: bold;
   color: #333333;
-  line-height: 0.6rem;
 }
 .fenye2_main .title .search_box {
   float: right;
@@ -338,32 +337,31 @@
 }
 .fenye2_main .title .search_box p {
   display: inline-block;
-  height: 0.12rem;
   font-size: 0.12rem;
+  vertical-align: middle;
   font-family: Source Han Sans CN;
   font-weight: 400;
   color: #333333;
-  line-height: 0.6rem;
 }
 .fenye2_main .title .search_box p span {
   color: #3f67b6;
-  height: 0.12rem;
+  display: contents;
   font-size: 0.12rem;
   font-family: Source Han Sans CN;
   font-weight: 400;
   color: #333333;
-  line-height: 0.6rem;
 }
 .fenye2_main .title .search_box .searchicon {
-  vertical-align: sub;
+  vertical-align: middle;
   font-size: 0.16rem;
   background-color: #005AAA;
   color: #FFFFFF;
-  padding: 0.08rem 0.16rem;
+  padding: 0.081rem 0.16rem;
   border-top-right-radius: 0.05rem;
   border-bottom-right-radius: 0.05rem;
 }
 .fenye2_main .title .search_box input {
+  vertical-align: middle;
   margin-left: 0.2rem;
   width: 2.24rem;
   background-color: #FFFFFF;
@@ -464,4 +462,719 @@
   color: #999999;
   line-height: 0.18rem;
   border: 1px solid #e7eaec;
+}
+@media screen and (max-width: 1200px) {
+  .menu_zhezhao {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 400;
+    left: 0;
+  }
+  .menu_zhezhao .left {
+    width: 50%;
+    height: 100%;
+    background-color: #7F7F7F;
+  }
+  .menu_zhezhao .right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+  }
+  .menu_zhezhao .right .menu_item {
+    display: block;
+    border-top: 1px solid #EEEEEE;
+    padding: 25px 0 25px 39px;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .menu_zhezhao .right .last_menu_item {
+    border-bottom: 1px solid #EEEEEE !important;
+  }
+  .menu_zhezhao .right .login_success_pad_phone {
+    position: absolute;
+    top: 0.48rem;
+    left: 0.48rem;
+  }
+  .menu_zhezhao .right .login_success_pad_phone span {
+    font-size: 0.17rem;
+  }
+  .menu_zhezhao .right .login_success_pad_phone .name_tuichu {
+    display: inline-block;
+    padding-left: 0.24rem;
+  }
+  .menu_zhezhao .right .login_success_pad_phone .name_tuichu i {
+    display: inline-block;
+    font-size: 0.17rem;
+    padding-left: 0.24rem;
+    padding-right: 0.24rem;
+  }
+  .header {
+    height: 0.8rem;
+  }
+  .header .warp {
+    padding-top: 0.22rem;
+    padding-bottom: 0.22rem;
+  }
+  .header .warp .flex_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .warp .nav_left .logo {
+    width: 1.69rem;
+    height: 0.36rem;
+    margin-right: 0;
+  }
+  .header .warp .nav_left .logo img {
+    height: 100%;
+    width: 100%;
+  }
+  .header .warp .nav_left .nav_detail {
+    display: none;
+  }
+  .header .warp .nav_right .pcduan {
+    display: none;
+  }
+  .header .warp .nav_right .padduan {
+    text-align: right;
+    display: block;
+  }
+  .header .warp .nav_right .padduan span {
+    display: inline-block;
+    font-size: 0.22rem;
+    color: #333;
+    font-weight: 400;
+    padding: 0 15px;
+  }
+  .header .warp .nav_right .padduan .close_menu {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    padding: 14px;
+    display: inline-block;
+    height: 0.22rem;
+    width: 0.22rem;
+    background-color: #005AAA;
+  }
+  .header .warp .nav_right .padduan .close_menu span {
+    color: #fff;
+    padding: 0;
+  }
+  .banner {
+    width: 100%;
+    /*需要分页自定义css*/
+  }
+  .banner .pager {
+    position: absolute;
+    bottom: 0.24rem;
+    text-align: center;
+    width: 100%;
+  }
+  .banner .pager li {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: "iconfont" !important;
+    color: #fff;
+    font-size: 0.26rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    width: 0.073rem;
+    height: 0.073rem;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  .banner .pager li.cur::before {
+    content: '';
+    width: 0.18rem;
+    height: 0.18rem;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    top: -50%;
+    left: -50%;
+    margin-left: -0.03rem;
+    margin-top: -0.03rem;
+  }
+  .banner img {
+    height: 3.5rem;
+  }
+  .banner .btn_prev {
+    left: 0.14rem;
+  }
+  .banner .btn_prev i {
+    font-size: 0.22rem;
+  }
+  .banner .btn_next {
+    right: 0.14rem;
+  }
+  .banner .btn_next i {
+    font-size: 0.22rem;
+  }
+  .company {
+    background-color: #f2f2f2;
+  }
+  .company .list {
+    padding: 0.24rem 0 0.24rem 0;
+  }
+  .company .list .item .main_img {
+    padding-top: 0.21rem;
+  }
+  .company .list .item .main_img img {
+    width: 0.79rem;
+    height: 0.25rem;
+  }
+  .company .list .item .danwei {
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.18rem;
+  }
+  .company .list .item .weixin_img {
+    display: inline-block;
+    padding-right: 0.2rem;
+  }
+  .company .list .item .weixin_img p {
+    padding-top: 0.11rem;
+    text-align: center;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.18rem;
+  }
+  .company .list .item .weixin_img img {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+  .company .list .item .app_img {
+    display: inline-block;
+  }
+  .company .list .item .app_img p {
+    padding-top: 0.1rem;
+    text-align: center;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .company .list .item .app_img img {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+  .company .list .item .detail {
+    padding-top: 0.3rem;
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .company .list .item:last-child {
+    text-align: right;
+  }
+  .fenye2_main .title {
+    padding-top: 0.29rem;
+    padding-bottom: 0.4rem;
+  }
+  .fenye2_main .title .title_left {
+    height: 0.24rem;
+    font-size: 0.24rem;
+    font-family: Microsoft YaHei UI;
+    font-weight: bold;
+    color: #333333;
+  }
+  .fenye2_main .title .search_box {
+    float: right;
+    text-align: right;
+    vertical-align: top;
+  }
+  .fenye2_main .title .search_box p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .fenye2_main .title .search_box p span {
+    color: #3f67b6;
+    display: contents;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .fenye2_main .title .search_box .searchicon {
+    vertical-align: middle;
+    font-size: 0.16rem;
+    background-color: #005AAA;
+    color: #FFFFFF;
+    padding: 0.081rem 0.16rem;
+    border-top-right-radius: 0.05rem;
+    border-bottom-right-radius: 0.05rem;
+  }
+  .fenye2_main .title .search_box input {
+    margin-left: 0.1rem;
+    width: 1.7rem;
+    vertical-align: middle;
+    background-color: #FFFFFF;
+    border-top-left-radius: 0.05rem;
+    border-bottom-left-radius: 0.05rem;
+    height: 0.12rem;
+    padding: 0.09rem 0.11rem 0.11rem 0.11rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.6rem;
+    border: 1px solid #dbddde;
+  }
+  .fenye2_main .list {
+    padding-left: 0.59rem;
+    padding-right: 0.57rem;
+  }
+  .fenye2_main .list .item {
+    padding-top: 0.31rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #eef0f1;
+  }
+  .fenye2_main .list .item .left {
+    vertical-align: top;
+    width: 3.2rem;
+    height: 1.79rem;
+    cursor: pointer;
+    box-sizing: content-box;
+    padding-right: 0.27rem;
+  }
+  .fenye2_main .list .item .left img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+  .fenye2_main .list .item .right {
+    vertical-align: top;
+    width: 4.95rem;
+    padding-top: 0.05rem;
+  }
+  .fenye2_main .list .item .right .label {
+    display: inline-block;
+    padding: 0.04rem 0.07rem 0.07rem 0.08rem;
+    font-size: 0.14rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #005AAA;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .fenye2_main .list .item .right .saishi {
+    padding-top: 0.09rem;
+    padding-bottom: 0.29rem;
+    cursor: pointer;
+    font-size: 0.24rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+  }
+  .fenye2_main .list .item .right .xiangqing {
+    font-size: 0.14rem;
+    cursor: pointer;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.18rem;
+    padding-bottom: 0.2rem;
+  }
+  .fenye2_main .list .item .right .time {
+    font-size: 0.14rem;
+    cursor: pointer;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+  }
+  .fenye2_main .list .item .right:hover .saishi {
+    color: #005AAA;
+  }
+  .fenye2_main .list .item .right:hover .xiangqing {
+    color: #005AAA;
+  }
+  .fenye2_main .list .item:nth-child(1) {
+    padding-top: 0;
+  }
+  .fenye2_main .loadmore_box3 {
+    text-align: center;
+    margin-top: 0.3rem;
+    margin-bottom: 0.4rem;
+  }
+  .fenye2_main .loadmore_box3 .loadmore3 {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.08rem 0.21rem 0.1rem 0.2rem;
+    border-radius: 0.2rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.18rem;
+    border: 1px solid #e7eaec;
+  }
+}
+@media screen and (max-width: 751px) {
+  .goback {
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    background-color: #646464;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    line-height: 100%;
+    z-index: 200;
+    text-align: center;
+  }
+  .goback span {
+    display: inline-block;
+    line-height: 40px;
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+  .menu_zhezhao .left {
+    width: 30%;
+    height: 100%;
+    background-color: #7F7F7F;
+  }
+  .menu_zhezhao .right {
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+  }
+  .menu_zhezhao .right .menu_item {
+    border-top: 1px solid #EEEEEE;
+    padding: 0.25rem 0 0.24rem 0.15rem;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .menu_zhezhao .right .menu_item:last-child {
+    border-bottom: 1px solid #EEEEEE;
+  }
+  .menu_zhezhao .right .login_success_pad_phone {
+    position: absolute;
+    top: 5.41rem;
+    left: 0.15rem;
+    display: inline-block;
+  }
+  .menu_zhezhao .right .login_success_pad_phone span {
+    font-size: 0.14rem;
+  }
+  .menu_zhezhao .right .login_success_pad_phone .name_tuichu {
+    display: inline-block;
+    padding-left: 0.2rem;
+  }
+  .menu_zhezhao .right .login_success_pad_phone .name_tuichu i {
+    display: inline-block;
+    font-size: 0.14rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+  .header {
+    height: 0.5rem;
+  }
+  .header .warp {
+    padding-top: 0.14rem;
+    padding-bottom: 0.14rem;
+  }
+  .header .warp .flex_box .nav_left {
+    width: 60%;
+  }
+  .header .warp .flex_box .nav_left .logo {
+    width: 1.03rem;
+    height: 0.22rem;
+  }
+  .header .warp .flex_box .nav_left .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  .header .warp .flex_box .nav_right {
+    width: 40%;
+    text-align: right;
+  }
+  .header .warp .flex_box .nav_right .menu {
+    padding-right: 0;
+  }
+  .header .warp .flex_box .nav_right .close_menu {
+    right: -15px;
+  }
+  .banner {
+    /*需要分页自定义css*/
+  }
+  .banner .pager {
+    position: absolute;
+    bottom: 0.08rem;
+    text-align: center;
+    width: 100%;
+  }
+  .banner .pager li {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: "iconfont" !important;
+    color: #fff;
+    font-size: 0.12rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    width: 0.05rem;
+    height: 0.05rem;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  .banner .pager li.cur::before {
+    content: '';
+    width: 0.11rem;
+    height: 0.11rem;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    top: -50%;
+    left: -50%;
+    margin-left: -0.02rem;
+    margin-top: -0.017rem;
+  }
+  .banner img {
+    height: 1.5rem;
+  }
+  .banner .btn_next {
+    display: none !important;
+  }
+  .banner .btn_prev {
+    display: none !important;
+  }
+  .company .warp2 .list {
+    padding-top: 0.29rem;
+    padding-bottom: 0.3rem;
+  }
+  .company .warp2 .list .item {
+    width: 33.33333%;
+    vertical-align: top;
+    padding-right: 10px;
+  }
+  .company .warp2 .list .item p {
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .company .warp2 .list .item .main_img {
+    padding-top: 0.09rem;
+  }
+  .company .warp2 .list .item .main_img img {
+    height: 0.21rem;
+    width: 0.62rem;
+  }
+  .company .warp2 .list .item .detail {
+    line-height: auto;
+    padding-top: 0.14rem;
+  }
+  .company .warp2 .list .item .weixin_img {
+    padding: 0.19rem 0.14rem 0.13rem 0.14rem;
+    background-color: #fff;
+    margin-right: 0.4rem;
+  }
+  .company .warp2 .list .item .weixin_img img {
+    width: 0.72rem;
+    height: 0.72rem;
+  }
+  .company .warp2 .list .item .weixin_img p {
+    padding-top: 0.09rem;
+  }
+  .company .warp2 .list .item .app_img {
+    padding: 0.19rem 0.14rem 0.13rem 0.14rem;
+    background-color: #fff;
+  }
+  .company .warp2 .list .item .app_img img {
+    width: 0.72rem;
+    height: 0.72rem;
+  }
+  .company .warp2 .list .item .app_img p {
+    padding-top: 0.09rem;
+  }
+  .company .warp2 .list .item:last-child {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.2rem;
+  }
+  .footer {
+    width: 100%;
+    min-height: auto;
+    background: #fafafa;
+    text-align: center;
+  }
+  .footer .warp {
+    padding: 10px 15px 20px;
+  }
+  .footer .warp .bottom {
+    margin: 0;
+    border: none;
+    padding: 0 0.1rem;
+  }
+  .footer .warp .bottom span,
+  .footer .warp .bottom a {
+    font-size: 0.12rem;
+    vertical-align: middle;
+  }
+  .footer .warp .bottom .wangzhan {
+    padding: 5px 0;
+  }
+  .footer .warp .bottom .wangzhan a {
+    color: #0c5ca8;
+  }
+  .fenye2_main .title {
+    padding-top: 0.18rem;
+    padding-bottom: 0.19rem;
+  }
+  .fenye2_main .title .title_left {
+    height: 0.21rem;
+    font-size: 0.2rem;
+    font-family: Microsoft YaHei UI;
+    font-weight: bold;
+    color: #333333;
+  }
+  .fenye2_main .title .search_box {
+    float: right;
+    text-align: right;
+    vertical-align: top;
+  }
+  .fenye2_main .title .search_box p {
+    display: inline-block;
+    vertical-align: middle;
+    height: 0.21rem;
+    line-height: 0.21rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .fenye2_main .title .search_box p span {
+    height: 0.21rem;
+    line-height: 0.21rem;
+    color: #3f67b6;
+    display: contents;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+  .fenye2_main .title .search_box .searchicon {
+    vertical-align: middle;
+    font-size: 0.16rem;
+    height: 0.21rem;
+    line-height: 0.21rem;
+    color: #333;
+    background-color: #fff;
+    padding-left: 0.2rem;
+  }
+  .fenye2_main .title .search_box input {
+    display: none;
+  }
+  .fenye2_main .list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .fenye2_main .list .item {
+    width: 100%;
+    display: block;
+    padding-top: 0.2rem;
+    padding-bottom: 0.05rem;
+    border-bottom: 1px solid transparent;
+  }
+  .fenye2_main .list .item .left {
+    vertical-align: top;
+    width: 100%;
+    height: 1.92rem;
+    cursor: pointer;
+    box-sizing: content-box;
+    padding-right: 0;
+  }
+  .fenye2_main .list .item .left img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+  .fenye2_main .list .item .right {
+    width: 100%;
+    display: block;
+    padding-top: 0.2rem;
+  }
+  .fenye2_main .list .item .right .label {
+    display: inline-block;
+    padding: 0.03rem 0.07rem 0.05rem 0.06rem;
+    font-size: 0.12rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #005AAA;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .fenye2_main .list .item .right .saishi {
+    padding-top: 0.1rem;
+    padding-bottom: 0.14rem;
+    cursor: pointer;
+    font-size: 0.18rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+  }
+  .fenye2_main .list .item .right .xiangqing {
+    display: none;
+    font-size: 0.14rem;
+    cursor: pointer;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.12rem;
+    padding-bottom: 0.2rem;
+  }
+  .fenye2_main .list .item .right .time {
+    font-size: 0.12rem;
+    cursor: pointer;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+  }
+  .fenye2_main .list .item .right:hover .saishi {
+    color: #005AAA;
+  }
+  .fenye2_main .list .item .right:hover .xiangqing {
+    color: #005AAA;
+  }
+  .fenye2_main .list .item:nth-child(1) {
+    padding-top: 0;
+  }
+  .fenye2_main .loadmore_box3 {
+    text-align: center;
+    margin-top: 0.32rem;
+    margin-bottom: 0.7rem;
+  }
+  .fenye2_main .loadmore_box3 .loadmore3 {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.08rem 0.21rem 0.1rem 0.2rem;
+    border-radius: 0.2rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.18rem;
+    border: 1px solid #e7eaec;
+  }
 }
