@@ -162,8 +162,29 @@
                             <input type="text" placeholder="请输入关键字"><span class="iconfont">&#xe636;</span>
                         </div>
                     </div>
-                    <div class="list o_g">
-
+                    <div class="banner2 js_banner2">
+                        <div class="showbox">
+                            <ul class="o_g">
+                                <li class="o_u o_df_2-2 o_sm_1-2 swiper-no-swiping">
+                                    <div class="list o_g">
+                                    </div>
+                                </li>
+                                <li class="o_u o_df_2-2 o_sm_1-2 swiper-no-swiping">
+                                    <div class="list o_g">
+                                    </div>
+                                </li>
+                                <li class="o_u o_df_2-2 o_sm_1-2 swiper-no-swiping">
+                                    <div class="list o_g">
+                                    </div>
+                                </li>
+                                <li class="o_u o_df_2-2 o_sm_1-2 swiper-no-swiping">
+                                    <div class="list o_g">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--分页-->
+                        <ul class="pager2 js_pager2"></ul>
                     </div>
                     <div class="loadmore_box">
                         <span class="loadmore js_loadmore">加载更多</span>

@@ -6,7 +6,7 @@ $(document).ready(function() {
         loop: true,
         pager: ".js_pager",
         pagerHover: false,
-        // speed: 3000,
+        speed: 3000,
         startFn: function() {
             // console.log("1");
         },
@@ -15,9 +15,45 @@ $(document).ready(function() {
         }
     });
     bannerSlider.init();
+
+    // 主页list 轮播 start
+    var bannerSlider2 = $(".js_banner2").oSlider({
+        loop: true,
+        pager: ".js_pager2",
+        pagerHover: false,
+        noSwiping: true,
+        noSwipingClass: 'stop-swiping',
+        // speed: 3000,
+        startFn: function() {
+            // console.log("1");
+        },
+        playFn: function(p) {
+            console.log(p.i);
+            $('.saishixinwen .table_box .tab_bar').eq(p.i).find('span').removeClass('displaynone');
+            $('.saishixinwen .table_box .tab_bar').eq(p.i).addClass('color_005AAA');
+            $('.saishixinwen .table_box .tab_bar').eq(p.i).siblings('.tab_bar').find('span').addClass('displaynone');
+            $('.saishixinwen .table_box .tab_bar').eq(p.i).siblings('.tab_bar').removeClass('color_005AAA');
+        }
+    });
+    bannerSlider2.init();
+    // $('.js_banner2 ')
+
+    // 将swiper和tab选项卡绑定
+    $('.saishixinwen .table_box').on('click', '.tab_bar', function(e) {
+        // 获取当前索引
+        var $this = $(this);
+        index = $this.index();
+        bannerSlider2.goto(index);
+        $this.find('span').removeClass('displaynone');
+        $this.addClass('color_005AAA');
+        $this.siblings('.tab_bar').find('span').addClass('displaynone');
+        $this.siblings('.tab_bar').removeClass('color_005AAA');
+    });
+    // 主页list 轮播 end
+
     // 轮播图箭头
-    $('.btn_prev').html('<i class="iconfont">&#xe6a5;</i>');
-    $('.btn_next').html('<i class="iconfont">&#xe6a3;</i>');
+    $('.js_banner .btn_prev').html('<i class="iconfont">&#xe6a5;</i>');
+    $('.js_banner .btn_next').html('<i class="iconfont">&#xe6a3;</i>');
 
     // 注意：o_picture一定需要放在read里面
     // 响应式图片自己下载 start 头部下面第一个轮播第一张图片更换
@@ -109,7 +145,7 @@ $(document).ready(function() {
                     </div>`
                 });
                 // html方法会把无弄没有，所以用append来添加，无是默认的
-                $('.js_saishixinwen .list').append(html);
+                $('.js_saishixinwen .js_banner2 .list').append(html);
             }
         })
     }
