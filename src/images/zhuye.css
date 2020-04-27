@@ -608,6 +608,12 @@
   padding-bottom: 0.3rem;
   border-bottom: 1px solid #eef0f1;
 }
+.saishixinwen .list .item a {
+  color: #333;
+}
+.saishixinwen .list .item a:visited {
+  color: #333;
+}
 .saishixinwen .list .item .left {
   vertical-align: top;
   width: 3.8rem;

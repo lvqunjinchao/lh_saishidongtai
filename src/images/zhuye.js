@@ -178,6 +178,7 @@ $(document).ready(function() {
                     // 注意！select值(value)就等于选中option的值，可以找到category_id直接赋值就行，不用转换了
                     // console.log(data.xinwensaishi);
                     html3 += `<div class="item o_df_1-1">
+                    <a href="./daka.shtml">
                             <div class="left o_u">
                                 <img src="${item.img}" alt="">
                             </div>
@@ -195,6 +196,7 @@ $(document).ready(function() {
                                 ${item.time}
                                 </div>
                             </div>
+                            </a>
                         </div>`
                 });
                 // html方法会把无弄没有，所以用append来添加，无是默认的

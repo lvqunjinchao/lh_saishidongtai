@@ -113,11 +113,11 @@
                 <div class="warp2">
                     <div class="title o_g">
                         <span class="title_left">赛事新闻</span>
-                        <span class="title_right">了解更多</span>
+                        <a href="./fenye2.shtml" class="title_right">了解更多</a>
                     </div>
                     <div class="video o_g">
                         <div class="video_left o_u">
-                            <a href="#">
+                            <a href="./fenye1.shtml">
                                 <img src="./images/tupian/图层 53.png" alt="">
                                 <div class="bottom o_g">
                                     <span class="bottom_left">2020“海尔智家杯”第三届中国室内设计师冠军赛大赛视频</span>

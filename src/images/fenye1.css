@@ -319,6 +319,46 @@
 .footer .warp .bottom .threeone:nth-child(3) {
   text-align: center;
 }
+.allsearch {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 700;
+}
+.allsearch .content {
+  padding: 0.22rem 0.15rem 0.19rem 0.17rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.allsearch .content .left {
+  width: 100%;
+  position: relative;
+}
+.allsearch .content .left input {
+  background-color: #EEF0F1;
+  padding: 0.07rem 0.32rem 0.07rem 0.11rem;
+  font-size: 0.12rem;
+  border-radius: 0.05rem;
+  border: transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+.allsearch .content .left span {
+  position: absolute;
+  right: 0.16rem;
+  top: 0.05rem;
+  font-size: 0.16rem;
+  color: #999999;
+}
+.allsearch .content .right {
+  padding-left: 0.15rem;
+}
+.allsearch .content .right span {
+  cursor: pointer;
+  font-size: 0.22rem;
+  color: #999999;
+}
 .dasaishipin .title {
   padding-top: 0.48rem;
   padding-bottom: 0.49rem;

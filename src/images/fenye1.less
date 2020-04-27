@@ -351,6 +351,48 @@
 // 尾部 end
 ////////////////////////以上是共有的
 // 大赛视频模块 start
+// 搜索栏
+.allsearch {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 700;
+    .content {
+        padding: 0.22rem 0.15rem 0.19rem 0.17rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        .left {
+            width: 100%;
+            position: relative;
+            input {
+                background-color: #EEF0F1;
+                padding: 0.07rem 0.32rem 0.07rem 0.11rem;
+                font-size: 0.12rem;
+                border-radius: 0.05rem;
+                border: transparent;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            span {
+                position: absolute;
+                right: 0.16rem;
+                top: 0.05rem;
+                font-size: 0.16rem;
+                color: #999999;
+            }
+        }
+        .right {
+            padding-left: 0.15rem;
+            span {
+                cursor: pointer;
+                font-size: 0.22rem;
+                color: #999999;
+            }
+        }
+    }
+}
+
 .dasaishipin {
     .title {
         padding-top: 0.48rem;

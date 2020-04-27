@@ -350,7 +350,47 @@
 
 // 尾部 end
 ////////////////////////以上是共有的
-.fenye2_main{
+.allsearch {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 700;
+    .content {
+        padding: 0.22rem 0.15rem 0.19rem 0.17rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        .left {
+            width: 100%;
+            position: relative;
+            input {
+                background-color: #EEF0F1;
+                padding: 0.07rem 0.32rem 0.07rem 0.11rem;
+                font-size: 0.12rem;
+                border-radius: 0.05rem;
+                border: transparent;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            span {
+                position: absolute;
+                right: 0.16rem;
+                top: 0.05rem;
+                font-size: 0.16rem;
+                color: #999999;
+            }
+        }
+        .right {
+            padding-left: 0.15rem;
+            span {
+                cursor: pointer;
+                font-size: 0.22rem;
+                color: #999999;
+            }
+        }
+    }
+}
+.fenye2_main {
     .title {
         padding-top: 0.48rem;
         padding-bottom: 0.49rem;
@@ -415,7 +455,12 @@
             padding-top: 0.31rem;
             padding-bottom: 0.3rem;
             border-bottom: 1px solid rgba(238, 240, 241, 1);
-            ;
+            a {
+                color: #333;
+            }
+            a:visited {
+                color: #333;
+            }
             .left {
                 vertical-align: top;
                 width: 3.8rem;
@@ -677,7 +722,6 @@
                     font-weight: 400;
                     color: rgba(51, 51, 51, 1);
                     line-height: 0.18rem;
-
                 }
                 .weixin_img {
                     display: inline-block;
@@ -724,7 +768,7 @@
             }
         }
     } // 赛事新闻
-    .fenye2_main{
+    .fenye2_main {
         .title {
             padding-top: 0.29rem;
             padding-bottom: 0.4rem;
@@ -873,7 +917,6 @@
 }
 
 // Pad端 end
-
 //手机端开始 start
 @media screen and (max-width:751px) {
     // 手机端返回顶部
@@ -1099,7 +1142,7 @@
         }
     } // 尾部 end
     // 视频
-    .fenye2_main{
+    .fenye2_main {
         .title {
             padding-top: 0.18rem;
             padding-bottom: 0.19rem;

@@ -75,9 +75,22 @@
                 <ul class="pager js_pager"></ul>
             </div>
             <!--轮播图 end-->
+            <!-- 大赛视频 搜索栏 start-->
+            <div class="allsearch o_g displaynone">
+                <div class="content">
+                    <div class="left">
+                        <input type="text" name="" id="" placeholder="搜索">
+                        <span class="iconfont">&#xe636;</span>
+                    </div>
+                    <div class="right">
+                        <span class="iconfont search_close">&#xe608;</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 大赛视频 搜索栏 end -->
 
             <!-- 赛事新闻模块 start -->
-            <div class="fenye2_main o_g">
+            <div class="fenye2_main o_g searchtop">
                 <div class="warp2">
                     <div class="title o_g">
                         <span class="title_left">赛事新闻</span>
@@ -142,6 +155,8 @@
     <script type="text/javascript" src="./images/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="./images/obox-min.js"></script>
     <script type="text/javascript" src="./images/zhuye.js"></script>
+    <script type="text/javascript" src="./images/fenye.js"></script>
+
 
     <!-- 本页面独立js end -->
 </body>
