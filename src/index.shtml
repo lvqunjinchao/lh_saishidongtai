@@ -14,6 +14,7 @@
     <!--#include virtual="head.shtml"-->
     <link rel="stylesheet" href="./images/obox.css">
     <link rel="stylesheet" href="./images/iconfont/iconfont.css" />
+    <link rel="stylesheet" href="./images/swiper.min.css" />
     <!-- css资源end -->
     <!-- 本页面独立css start -->
     <link rel="stylesheet" href="./images/zhuye.css">
@@ -162,29 +163,21 @@
                             <input type="text" placeholder="请输入关键字"><span class="iconfont">&#xe636;</span>
                         </div>
                     </div>
-                    <div class="banner2 js_banner2">
-                        <div class="showbox">
-                            <ul class="o_g">
-                                <li class="o_u o_df_2-2 o_sm_1-2 swiper-no-swiping">
-                                    <div class="list o_g">
-                                    </div>
-                                </li>
-                                <li class="o_u o_df_2-2 o_sm_1-2 swiper-no-swiping">
-                                    <div class="list o_g">
-                                    </div>
-                                </li>
-                                <li class="o_u o_df_2-2 o_sm_1-2 swiper-no-swiping">
-                                    <div class="list o_g">
-                                    </div>
-                                </li>
-                                <li class="o_u o_df_2-2 o_sm_1-2 swiper-no-swiping">
-                                    <div class="list o_g">
-                                    </div>
-                                </li>
-                            </ul>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide stop-swiping">
+                                <div class="list"></div>
+                            </div>
+                            <div class="swiper-slide stop-swiping">
+                                <div class="list"></div>
+                            </div>
+                            <div class="swiper-slide stop-swiping">
+                                <div class="list"></div>
+                            </div>
+                            <div class="swiper-slide stop-swiping">
+                                <div class="list"></div>
+                            </div>
                         </div>
-                        <!--分页-->
-                        <ul class="pager2 js_pager2"></ul>
                     </div>
                     <div class="loadmore_box">
                         <span class="loadmore js_loadmore">加载更多</span>
@@ -237,6 +230,7 @@
     <script type="text/javascript" src="./images/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="./images/obox-min.js"></script>
     <script type="text/javascript" src="./images/zhuye.js"></script>
+    <script type="text/javascript" src="./images/swiper.min.js"></script>
 
     <!-- 本页面独立js end -->
 </body>

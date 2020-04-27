@@ -17,33 +17,33 @@ $(document).ready(function() {
     bannerSlider.init();
 
     // 主页list 轮播 start
-    var bannerSlider2 = $(".js_banner2").oSlider({
-        loop: true,
-        pager: ".js_pager2",
-        pagerHover: false,
+    var mySwiper = new Swiper('.swiper-container', {
         noSwiping: true,
-        noSwipingClass: 'stop-swiping',
-        // speed: 3000,
-        startFn: function() {
-            // console.log("1");
+        threshold: 50,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true,
         },
-        playFn: function(p) {
-            console.log(p.i);
-            $('.saishixinwen .table_box .tab_bar').eq(p.i).find('span').removeClass('displaynone');
-            $('.saishixinwen .table_box .tab_bar').eq(p.i).addClass('color_005AAA');
-            $('.saishixinwen .table_box .tab_bar').eq(p.i).siblings('.tab_bar').find('span').addClass('displaynone');
-            $('.saishixinwen .table_box .tab_bar').eq(p.i).siblings('.tab_bar').removeClass('color_005AAA');
-        }
-    });
-    bannerSlider2.init();
-    // $('.js_banner2 ')
+        loop: false,
+        noSwipingClass: 'stop-swiping',
+        on: {
+            slideChange: function() {
+                console.log(this.activeIndex);
+                $('.saishixinwen .table_box .tab_bar').eq(this.activeIndex).find('span').removeClass('displaynone');
+                $('.saishixinwen .table_box .tab_bar').eq(this.activeIndex).addClass('color_005AAA');
+                $('.saishixinwen .table_box .tab_bar').eq(this.activeIndex).siblings('.tab_bar').find('span').addClass('displaynone');
+                $('.saishixinwen .table_box .tab_bar').eq(this.activeIndex).siblings('.tab_bar').removeClass('color_005AAA');
+            },
+        },
+    })
+
 
     // 将swiper和tab选项卡绑定
     $('.saishixinwen .table_box').on('click', '.tab_bar', function(e) {
         // 获取当前索引
         var $this = $(this);
         index = $this.index();
-        bannerSlider2.goto(index);
+        mySwiper.slideTo(index, 800, false);
         $this.find('span').removeClass('displaynone');
         $this.addClass('color_005AAA');
         $this.siblings('.tab_bar').find('span').addClass('displaynone');
@@ -145,7 +145,7 @@ $(document).ready(function() {
                     </div>`
                 });
                 // html方法会把无弄没有，所以用append来添加，无是默认的
-                $('.js_saishixinwen .js_banner2 .list').append(html);
+                $('.js_saishixinwen .swiper-container .list').append(html);
             }
         })
     }
@@ -339,6 +339,9 @@ $(document).ready(function() {
     } else if (width < 1200) {
         // width<750
         if (width <= 750) {
+            // 允许滑动
+            $('.js_saishixinwen .swiper-container .swiper-slide').removeClass('stop-swiping');
+
 
             // 手机端回到顶部 start
             $('.goback').removeClass('displaynone');
